@@ -23,4 +23,5 @@
 # SPA-style pretty paths
 /bunions /bunions/index.html 200
 /minimalist-shoes /minimalist-shoes/index.html 200
+/minimalist-shoes/compare /minimalist-shoes/compare/index.html 200
 /foot-care /foot-care/index.html 200
