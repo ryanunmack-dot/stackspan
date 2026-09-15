@@ -36,6 +36,7 @@
 
 # SPA-style pretty paths
 /bunions /bunions/index.html 200
+/bunions/wide-vs-fashion /bunions/wide-vs-fashion/index.html 200
 /minimalist-shoes /minimalist-shoes/index.html 200
 /minimalist-shoes/compare /minimalist-shoes/compare/index.html 200
 /minimalist-shoes/by-use /minimalist-shoes/by-use/index.html 200
