@@ -66,6 +66,16 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://stackspan.co/natural-fitness/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://stackspan.co/natural-fitness/era-training-drinks/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://stackspan.co/legal/affiliate-disclosure.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
