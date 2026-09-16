@@ -86,6 +86,26 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://stackspan.co/mobility/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://stackspan.co/mobility/foot-forward-warmup/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://stackspan.co/mobility/foot-forward-warmup/day-1/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://stackspan.co/longevity/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://stackspan.co/legal/affiliate-disclosure</loc>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
