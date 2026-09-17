@@ -54,6 +54,10 @@
 /go/malted-milk-powder https://www.amazon.com/dp/B0BQSJ2VQN?tag=stackspan-20 302
 /go/vital-farms-liquid-eggs https://www.amazon.com/dp/B07RHCHCLD?tag=stackspan-20 302
 
+# Reverse / backwards walking treadmills (Living; claim-safe gear — never Sperax; no dead ASINs)
+/go/redliro-reverse-treadmill https://www.amazon.com/dp/B0GQK5SSF5?tag=stackspan-20 302
+/go/atg-backward-treadmill https://www.amazon.com/dp/B0F1TG23NF?tag=stackspan-20 302
+
 # Other (not in 2026-09-12 foot dump; leave destination unchanged)
 /go/walking-pad https://amzn.to/4iAx9Bd 302
 
@@ -75,6 +79,7 @@
 
 /natural-fitness /natural-fitness/index.html 200
 /natural-fitness/era-training-drinks /natural-fitness/era-training-drinks/index.html 200
+/natural-fitness/backwards-walking-treadmill /natural-fitness/backwards-walking-treadmill/index.html 200
 
 /mobility /mobility/index.html 200
 /mobility/foot-forward-warmup /mobility/foot-forward-warmup/index.html 200
