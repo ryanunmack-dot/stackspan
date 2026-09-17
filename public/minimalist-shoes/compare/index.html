@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Barefoot and minimalist shoe picks by Amazon price tier — budget marketplace vs known brands, with honest affiliate links.">
+<meta name="description" content="Compare wide minimalist and barefoot trainers — decision matrix by price tier, toe-box feel, drop/flex, and best use. Amazon /go picks plus optional Xero &amp; Vivo brand links.">
 <link rel="canonical" href="https://stackspan.co/minimalist-shoes/compare/">
-<title>Barefoot shoes by price — StackSpan</title>
+<title>Compare wide minimalist / barefoot trainers — StackSpan</title>
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4.3.3" integrity="sha384-aJ9rL4k6lF+91guGvUFVSkpIcge7Zd9EiI4TQDLoK9kFaFJgKHgjEXVvG/qA5COj" crossorigin="anonymous"></script>
 <style type="text/tailwindcss">
 @theme { --color-brand: #ea580c; }
@@ -16,7 +16,7 @@
 body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background:var(--slate-50); color:var(--slate-800); line-height:1.55; min-height:100vh; display:flex; flex-direction:column; }
 a { color:var(--brand); text-decoration:none; }
 a:hover { text-decoration:underline; }
-.wrap { width:100%; max-width:52rem; margin:0 auto; padding:0 1rem; }
+.wrap { width:100%; max-width:56rem; margin:0 auto; padding:0 1rem; }
 .site-header, .site-footer { background:#fff; border-color:var(--slate-200); border-style:solid; }
 .site-header { border-width:0 0 1px; }
 .site-footer { border-width:1px 0 0; margin-top:auto; }
@@ -31,33 +31,40 @@ main { flex:1; padding:2.5rem 0; }
 h1 { font-size:clamp(1.75rem, 4vw, 2.5rem); line-height:1.15; color:var(--slate-900); margin:0.5rem 0 0; }
 h2 { color:var(--slate-900); font-size:1.2rem; margin:2rem 0 0.75rem; }
 .lede { font-size:1.125rem; color:var(--slate-600); margin-top:1rem; }
-.btn { display:inline-block; background:var(--brand); color:#fff !important; font-weight:600; font-size:0.9rem; padding:0.55rem 0.9rem; border-radius:0.55rem; text-decoration:none !important; white-space:nowrap; }
+.btn { display:inline-block; background:var(--brand); color:#fff !important; font-weight:600; font-size:0.85rem; padding:0.5rem 0.8rem; border-radius:0.55rem; text-decoration:none !important; white-space:nowrap; }
 .btn:hover { background:var(--brand-dark); }
 .btn-secondary { background:#fff; color:var(--slate-900) !important; border:1px solid var(--slate-200); }
 .btn-secondary:hover { border-color:var(--brand); color:var(--brand) !important; }
-.btn-row { display:flex; flex-wrap:wrap; gap:0.75rem; margin-top:1rem; }
+.btn-row { display:flex; flex-wrap:wrap; gap:0.65rem; margin-top:0.85rem; }
+.shop-stack { display:flex; flex-direction:column; align-items:flex-start; gap:0.4rem; }
 .bluf { background:#fff7ed; border:1px solid #fdba74; border-radius:0.75rem; padding:1rem 1.15rem; margin:1.5rem 0; }
 .bluf strong { color:var(--brand-dark); }
 .prose p { color:var(--slate-600); margin:0.85rem 0; }
-.prose ul { color:var(--slate-600); padding-left:1.2rem; }
+.prose ul, .prose ol { color:var(--slate-600); padding-left:1.2rem; }
+.prose li { margin:0.35rem 0; }
 .disclosure { background:#fff; border-bottom:1px solid var(--slate-200); font-size:0.8rem; color:var(--slate-500); padding:0.55rem 0; }
 .crumb { font-size:0.875rem; color:var(--slate-500); }
 .footer-inner { padding:2rem 0; font-size:0.875rem; color:var(--slate-500); }
 .footer-inner .name { font-weight:600; color:#334155; margin:0; }
 .muted { color:var(--slate-500); font-size:0.85rem; }
-.note { background:#fff; border:1px solid var(--slate-200); border-radius:0.75rem; padding:1rem 1.15rem; margin:1.25rem 0; font-size:0.95rem; color:var(--slate-600); }
+.brand-note { display:block; font-size:0.75rem; color:var(--slate-500); margin-top:0.25rem; }
 .table-wrap { overflow-x:auto; margin:1.25rem 0; border:1px solid var(--slate-200); border-radius:0.75rem; background:#fff; }
-table { width:100%; border-collapse:collapse; font-size:0.92rem; }
-th, td { padding:0.85rem 0.9rem; text-align:left; vertical-align:top; border-bottom:1px solid var(--slate-200); }
-th { background:#fff7ed; color:var(--slate-900); font-size:0.8rem; text-transform:uppercase; letter-spacing:0.04em; }
+table { width:100%; border-collapse:collapse; font-size:0.9rem; }
+th, td { padding:0.85rem 0.85rem; text-align:left; vertical-align:top; border-bottom:1px solid var(--slate-200); }
+th { background:#fff7ed; color:var(--slate-900); font-size:0.75rem; text-transform:uppercase; letter-spacing:0.04em; }
 tr:last-child td { border-bottom:none; }
 .tier { font-weight:600; color:var(--slate-900); white-space:nowrap; }
-.price { font-variant-numeric:tabular-nums; white-space:nowrap; color:var(--slate-800); }
-.tag { display:inline-block; font-size:0.7rem; font-weight:600; letter-spacing:0.03em; text-transform:uppercase; padding:0.15rem 0.45rem; border-radius:999px; background:#ffedd5; color:var(--brand-dark); margin-left:0.35rem; }
+.pick { font-weight:600; color:var(--slate-900); }
+.tag { display:inline-block; font-size:0.7rem; font-weight:600; letter-spacing:0.03em; text-transform:uppercase; padding:0.15rem 0.45rem; border-radius:999px; background:#ffedd5; color:var(--brand-dark); margin-left:0.35rem; vertical-align:middle; }
 .tag-known { background:#ecfdf5; color:#047857; }
-.tag-gap { background:#f1f5f9; color:#475569; }
-@media (max-width:640px) {
-  th:nth-child(4), td:nth-child(4) { display:none; }
+.cards { display:none; }
+.card { background:#fff; border:1px solid var(--slate-200); border-radius:0.75rem; padding:1.1rem 1.2rem; margin:1rem 0; }
+.card h3 { margin:0; font-size:1.05rem; color:var(--slate-900); }
+.card p { margin:0.4rem 0 0; color:var(--slate-600); font-size:0.95rem; }
+.meta { font-size:0.85rem; color:var(--slate-500); margin-top:0.35rem; }
+@media (max-width:720px) {
+  .table-wrap { display:none; }
+  .cards { display:block; }
 }
 </style>
 </head>
@@ -66,139 +73,190 @@ tr:last-child td { border-bottom:none; }
 <header class="site-header"><div class="wrap header-inner">
 <a class="logo" href="/">Stack<span>Span</span></a>
 <nav class="nav">
-<a href="/bunions/">Bunions</a>
 <a href="/minimalist-shoes/">Shoes</a>
 <a href="/foot-care/">Foot care</a>
+<a href="/bunions/">Bunions</a>
 </nav>
 </div></header>
 <main><div class="wrap">
-<p class="crumb"><a href="/">Home</a> / <a href="/minimalist-shoes/">Minimalist shoes</a> / Compare by price</p>
-<p class="eyebrow">Price-tier shortlist · not a full catalog</p>
-<h1>Barefoot shoes by price tier</h1>
-<p class="lede">Wide toe-box / zero-drop options we currently link — marketplace budget picks plus known-brand mid-premium gap-fills, sorted by Amazon list price.</p>
+<p class="crumb"><a href="/">Home</a> / <a href="/minimalist-shoes/">Minimalist shoes</a> / Compare wide trainers</p>
+<p class="eyebrow">Wide-trainer compare · pick by budget &amp; geometry</p>
+<h1>Compare wide minimalist / barefoot trainers</h1>
+<p class="lede">A short decision matrix for wide toe-box trainers we actually link — geometry and price tier first, then Amazon /go CTAs. Optional plain brand sites for Xero and Vivobarefoot (not affiliate).</p>
 <div class="bluf">
-<strong>BLUF:</strong> Under $40 Amazon “barefoot” listings are crowded with lookalikes. Pick one solid budget trainer if you want cheap room for toes; step up to Xero, Altra, Vivobarefoot, or Peluva when you want a known brand, trail use, or leather. Prices below are approximate Amazon buybox snapshots and can change by size/color.
+<strong>BLUF:</strong> Start with toe-box room, zero/low drop, and how easily the sole bends — then choose a price tier. Under ~$40–60 marketplace picks (ASITVO, Airhas, WHITIN) are try-on geometry. Mid-premium known brands (Xero Prio / XT Max, Vivo Motus) cost more and usually make sizing and returns less of a lottery. Shopping and fit language only; not medical advice.
 </div>
 <div class="prose">
-<p>This is not medical advice. Marketplace barefoot clones can vary in fit and quality control — confirm wide toe box and zero-drop on the product page before you buy. Known brands cost more; they also make returns and sizing less of a lottery.</p>
+<p>Anonymous shopping guide. Marketplace “barefoot” listings can vary by size and color — confirm wide toe box and drop on the product page before you buy. We only list /go routes that already exist; no new ASINs on this page.</p>
 </div>
 
-<div class="table-wrap" role="region" aria-label="Barefoot shoe picks by price tier">
+<div class="table-wrap" role="region" aria-label="Wide trainer decision matrix">
 <table>
 <thead>
 <tr>
-<th>Tier</th>
+<th>Price tier</th>
 <th>Pick</th>
-<th>~Price</th>
+<th>Toe box / geometry note</th>
 <th>Best for</th>
-<th></th>
+<th>Shop</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="tier">Under $40</td>
-<td>ASITVO barefoot trainers <span class="tag">Marketplace</span></td>
-<td class="price">~$38</td>
-<td>Best budget daily wide/zero-drop trainer in our set</td>
-<td><a class="btn" href="/go/asitvo-barefoot">Check price</a></td>
+<td class="pick">ASITVO barefoot trainers <span class="tag">Marketplace</span></td>
+<td>Roomy everyday splay — confirm on listing. Typically zero-drop; flexible trainer sole.</td>
+<td>Best budget daily wide trainer in this set</td>
+<td>
+<div class="shop-stack">
+<a class="btn" href="/go/asitvo-barefoot">ASITVO on Amazon</a>
+<a class="btn btn-secondary" href="/go/asitvo-under-40">Under $40 SKU</a>
+</div>
+</td>
 </tr>
 <tr>
 <td class="tier">Under $40</td>
-<td>AIRHAS workout barefoot <span class="tag">Marketplace</span></td>
-<td class="price">~$33</td>
+<td class="pick">Airhas workout / training <span class="tag">Marketplace</span></td>
+<td>Wide-ish budget last — check size chart. Low stack, bendy sole for light sessions.</td>
 <td>Second budget pick for walking / light training</td>
-<td><a class="btn btn-secondary" href="/go/airhas-workout">Check price</a></td>
+<td>
+<div class="shop-stack">
+<a class="btn" href="/go/airhas-workout">Airhas workout</a>
+<a class="btn btn-secondary" href="/go/airhas-training">Airhas training</a>
+</div>
+</td>
 </tr>
 <tr>
 <td class="tier">$40–60</td>
-<td>WHITIN barefoot minimalist <span class="tag">Marketplace</span></td>
-<td class="price">~$43</td>
-<td>Slightly higher budget daily wide sneaker</td>
-<td><a class="btn" href="/go/whitin-barefoot">Check price</a></td>
-</tr>
-<tr>
-<td class="tier">$40–60</td>
-<td>HOBIBEAR leather barefoot <span class="tag">Marketplace</span></td>
-<td class="price">~$47</td>
-<td>Leather / boot-style minimalist — not a gym shoe</td>
-<td><a class="btn btn-secondary" href="/go/hobibear-leather">Check price</a></td>
-</tr>
-<tr>
-<td class="tier">$60–100</td>
-<td>Hike Canyon trail barefoot <span class="tag">Marketplace</span></td>
-<td class="price">~$80</td>
-<td>Budget trail shape — prefer Altra below if you want a known trail name</td>
-<td><a class="btn" href="/go/hike-canyon">Check price</a></td>
+<td class="pick">WHITIN barefoot minimalist <span class="tag">Marketplace</span></td>
+<td>Wide daily sneaker shape. Zero-drop style; flexible midfoot crease.</td>
+<td>Slightly higher budget try-on / daily wear</td>
+<td>
+<div class="shop-stack">
+<a class="btn" href="/go/whitin-barefoot">WHITIN on Amazon</a>
+</div>
+</td>
 </tr>
 <tr>
 <td class="tier">$100–150</td>
-<td>Xero Prio <span class="tag tag-known">Known brand</span></td>
-<td class="price">~$110</td>
-<td>Everyday barefoot trainer — primary known-brand pick in this band</td>
-<td><a class="btn" href="/go/xero-prio">Check price</a></td>
+<td class="pick">Xero Prio <span class="tag tag-known">Known brand</span></td>
+<td>Foot-shaped toe box; toes can splay. Zero-drop; thin, flexible everyday sole.</td>
+<td>Primary known-brand everyday trainer</td>
+<td>
+<div class="shop-stack">
+<a class="btn" href="/go/xero-prio">Xero Prio on Amazon</a>
+<a class="btn btn-secondary" href="https://xeroshoes.com/" rel="noopener noreferrer">Brand site</a>
+<span class="brand-note">Brand link not affiliate</span>
+</div>
+</td>
 </tr>
 <tr>
 <td class="tier">$100–150</td>
-<td>Altra Lone Peak 9 <span class="tag tag-known">Known brand</span></td>
-<td class="price">~$145</td>
-<td>Zero-drop trail runner with a recognizable name (more stack than ultra-minimal)</td>
-<td><a class="btn" href="/go/altra-lone-peak-9">Check price</a></td>
+<td class="pick">Xero XT Max <span class="tag tag-known">Known brand</span></td>
+<td>Same family shape as Prio; roomy forefoot. Zero-drop with more cushion than Prio.</td>
+<td>Known-brand trainer when you want less “bare” feel</td>
+<td>
+<div class="shop-stack">
+<a class="btn" href="/go/xero-xt-max">Xero XT Max</a>
+<a class="btn btn-secondary" href="https://xeroshoes.com/" rel="noopener noreferrer">Brand site</a>
+<span class="brand-note">Brand link not affiliate</span>
+</div>
+</td>
 </tr>
 <tr>
 <td class="tier">$100–150</td>
-<td>Vivobarefoot Motus Strength <span class="tag tag-known">Known brand</span></td>
-<td class="price">~$147</td>
-<td>Training shoe from a recognizable barefoot brand</td>
-<td><a class="btn" href="/go/vivobarefoot">Check price</a></td>
-</tr>
-<tr>
-<td class="tier">$100–150</td>
-<td>Xero XT Max <span class="tag tag-known">Known brand</span></td>
-<td class="price">~$150</td>
-<td>More cushioned Xero trainer — same DNA, less “bare” feel</td>
-<td><a class="btn btn-secondary" href="/go/xero-xt-max">Check price</a></td>
-</tr>
-<tr>
-<td class="tier">$150+</td>
-<td>Peluva Strand ATR <span class="tag tag-known">Known brand</span></td>
-<td class="price">~$153</td>
-<td>5-toe zero-drop trail — niche mid-premium</td>
-<td><a class="btn" href="/go/pelluva-strand">Check price</a></td>
-</tr>
-<tr>
-<td class="tier">$150+</td>
-<td>Vivobarefoot Gobi <span class="tag tag-known">Known brand</span></td>
-<td class="price">~$180</td>
-<td>Leather lifestyle / casual barefoot sneaker</td>
-<td><a class="btn" href="/go/vivobarefoot-gobi">Check price</a></td>
+<td class="pick">Vivobarefoot Motus <span class="tag tag-known">Known brand</span></td>
+<td>Wide Motus last for gym / strength days. Zero-drop training shoe; firm platform feel.</td>
+<td>Known-brand gym / garage training add-on</td>
+<td>
+<div class="shop-stack">
+<a class="btn" href="/go/vivobarefoot">Vivo Motus on Amazon</a>
+<a class="btn btn-secondary" href="https://www.vivobarefoot.com/" rel="noopener noreferrer">Brand site</a>
+<span class="brand-note">Brand link not affiliate</span>
+</div>
+</td>
 </tr>
 </tbody>
 </table>
 </div>
 
-<div class="note">
-<strong>Niche only:</strong> <a href="/go/bulliant-slipper">BULLIANT barefoot slipper</a> (~$20) is a water/sock shoe, not a daily trainer. <a href="/go/kung-fu-shoes">Classic kung-fu / martial arts sneakers</a> (~$36) are thin-sole traditional shoes for movement culture — not a modern barefoot trainer. Extra ASITVO SKU at <a href="/go/asitvo-under-40">/go/asitvo-under-40</a> stays in redirects if you want another budget listing.
+<div class="cards" aria-label="Wide trainer cards (mobile)">
+<div class="card">
+<h3>ASITVO barefoot trainers <span class="tag">Marketplace</span></h3>
+<p class="meta">Under $40 · Roomy everyday splay · Typically zero-drop / flexible</p>
+<p>Best budget daily wide trainer in this set.</p>
+<div class="btn-row">
+<a class="btn" href="/go/asitvo-barefoot">ASITVO on Amazon</a>
+<a class="btn btn-secondary" href="/go/asitvo-under-40">Under $40 SKU</a>
+</div>
+</div>
+<div class="card">
+<h3>Airhas workout / training <span class="tag">Marketplace</span></h3>
+<p class="meta">Under $40 · Wide-ish budget last · Low stack / bendy sole</p>
+<p>Second budget pick for walking / light training.</p>
+<div class="btn-row">
+<a class="btn" href="/go/airhas-workout">Airhas workout</a>
+<a class="btn btn-secondary" href="/go/airhas-training">Airhas training</a>
+</div>
+</div>
+<div class="card">
+<h3>WHITIN barefoot minimalist <span class="tag">Marketplace</span></h3>
+<p class="meta">$40–60 · Wide daily sneaker · Zero-drop style flex</p>
+<p>Slightly higher budget try-on / daily wear.</p>
+<div class="btn-row">
+<a class="btn" href="/go/whitin-barefoot">WHITIN on Amazon</a>
+</div>
+</div>
+<div class="card">
+<h3>Xero Prio <span class="tag tag-known">Known</span></h3>
+<p class="meta">$100–150 · Foot-shaped splay · Zero-drop thin sole</p>
+<p>Primary known-brand everyday trainer.</p>
+<div class="btn-row">
+<a class="btn" href="/go/xero-prio">Xero Prio on Amazon</a>
+<a class="btn btn-secondary" href="https://xeroshoes.com/" rel="noopener noreferrer">Brand site — not affiliate</a>
+</div>
+</div>
+<div class="card">
+<h3>Xero XT Max <span class="tag tag-known">Known</span></h3>
+<p class="meta">$100–150 · Roomy forefoot · Zero-drop, more cushion</p>
+<p>Known-brand trainer when you want less “bare” feel.</p>
+<div class="btn-row">
+<a class="btn" href="/go/xero-xt-max">Xero XT Max</a>
+<a class="btn btn-secondary" href="https://xeroshoes.com/" rel="noopener noreferrer">Brand site — not affiliate</a>
+</div>
+</div>
+<div class="card">
+<h3>Vivobarefoot Motus <span class="tag tag-known">Known</span></h3>
+<p class="meta">$100–150 · Wide Motus last · Zero-drop training platform</p>
+<p>Known-brand gym / garage training add-on.</p>
+<div class="btn-row">
+<a class="btn" href="/go/vivobarefoot">Vivo Motus on Amazon</a>
+<a class="btn btn-secondary" href="https://www.vivobarefoot.com/" rel="noopener noreferrer">Brand site — not affiliate</a>
+</div>
+</div>
 </div>
 
 <div class="prose">
-<h2>What we left out on purpose</h2>
+<h2>How to use this matrix</h2>
 <ul>
-<li>Extra under-$40 clones (FUNWINK, generic “lightweight,” second AIRHAS training SKU) — same band as ASITVO/AIRHAS, weaker differentiation.</li>
-<li>More Merrell / Softstar / Lems / Topo / Feelgrounds SKUs — not in this affiliate set yet; we only list links we actually redirect.</li>
+<li><strong>Budget try-on:</strong> ASITVO or Airhas first; WHITIN if you want a slightly higher marketplace band.</li>
+<li><strong>Known everyday:</strong> Xero Prio when brand sizing and returns matter more than the lowest price.</li>
+<li><strong>More cushion / gym:</strong> Xero XT Max or Vivo Motus after a first pair is dialed — not required on day one.</li>
 </ul>
-<p>Start with footwear shape (wide toe box, flexible sole) before you optimize brand. If bunions or taper pain are the reason you’re here, read the <a href="/bunions/">bunion guide</a> first.</p>
+<p>Still learning the geometry language? Read <a href="/minimalist-shoes/fit-and-buying/">fit and buying</a>. First-pair shortlist: <a href="/minimalist-shoes/beginner/">beginner</a>. Match the day: <a href="/minimalist-shoes/by-use/">by use</a>.</p>
 </div>
 
 <div class="btn-row">
-<a class="btn" href="/minimalist-shoes/">All shoe links</a>
-<a class="btn btn-secondary" href="/bunions/">Bunion guide</a>
-<a class="btn btn-secondary" href="/foot-care/">Foot care</a>
+<a class="btn" href="/minimalist-shoes/">Shoe hub</a>
+<a class="btn btn-secondary" href="/minimalist-shoes/fit-and-buying/">Fit &amp; buying</a>
+<a class="btn btn-secondary" href="/minimalist-shoes/beginner/">Beginner</a>
+<a class="btn btn-secondary" href="/minimalist-shoes/by-use/">By use</a>
 </div>
-<p class="muted" style="margin-top:1rem">Affiliate links. You pay the same retail price; we may get a commission. Approximate prices from Amazon buybox snapshots (2026-09-13); verify live pricing on Amazon.</p>
+<p class="muted" style="margin-top:1rem">Last updated: September 2026 · Affiliate links via /go. Brand-site URLs for Xero and Vivobarefoot are plain (not affiliate). Approximate price tiers; verify live pricing on Amazon.</p>
 </div></main>
 <footer class="site-footer"><div class="wrap footer-inner">
 <p class="name">StackSpan</p>
-<p>Practical guides on foot health, bunions, and wider footwear.</p>
+<p>Natural lifestyle guides — wider footwear, foot care, strength &amp; longevity.</p>
 <p><a href="/legal/affiliate-disclosure.html">Affiliate disclosure</a> · <a href="/legal/privacy-policy.html">Privacy policy</a></p>
 </div></footer>
 </body>
