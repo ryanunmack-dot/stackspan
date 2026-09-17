@@ -76,12 +76,12 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://stackspan.co/legal/affiliate-disclosure.html</loc>
+    <loc>https://stackspan.co/legal/affiliate-disclosure</loc>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
   <url>
-    <loc>https://stackspan.co/legal/privacy-policy.html</loc>
+    <loc>https://stackspan.co/legal/privacy-policy</loc>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
