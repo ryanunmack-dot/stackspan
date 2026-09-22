@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400" role="img" aria-labelledby="title desc">
+  <title id="title">Soft gel and firmer stretcher comparison</title><desc id="desc">Clean high-contrast movement line diagram.</desc>
+  <style>
+  .bg{fill:#fff}
+  .ink{fill:none;stroke:#0f172a;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+  .solid{fill:#0f172a}
+  .muted{fill:#f8fafc;stroke:#0f172a;stroke-width:3;stroke-linejoin:round}
+  .accent{fill:#ea580c;stroke:#ea580c;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+  .label{font-family:Arial,Helvetica,sans-serif;font-size:24px;font-weight:600;letter-spacing:.02em;fill:#0f172a}
+  .small{font-family:Arial,Helvetica,sans-serif;font-size:20px;font-weight:600;letter-spacing:.01em;fill:#0f172a}
+</style>
+  
+<rect class="bg" x="0" y="0" width="800" height="400"/>
+<path d="M400 42V358" class="ink" opacity=".25"/>
+<!-- soft gel panel: simple forefoot and rounded separator -->
+<g transform="translate(0,0)">
+  <path d="M130 300C99 270 95 220 104 170C111 131 129 105 151 100C166 97 176 111 177 130C178 103 191 85 207 88C222 91 227 111 223 134C229 107 243 95 257 101C272 108 272 130 264 152C276 132 292 128 303 140C316 155 306 179 293 199C276 226 268 256 264 300Z" class="muted"/>
+  <path d="M177 130C179 153 181 173 183 194M223 134C215 157 211 177 210 196M264 152C250 168 241 186 235 203" class="ink" opacity=".55"/>
+  <path d="M178 184C187 176 199 176 208 184L211 207C200 216 188 216 178 207Z" class="accent"/>
+  <path d="M211 184C220 176 232 179 239 188L236 207C227 214 217 214 211 207Z" class="accent" opacity=".65"/>
+  <text class="label" x="200" y="344" text-anchor="middle">soft gel</text>
+</g>
+<!-- firmer stretcher panel -->
+<g transform="translate(400,0)">
+  <path d="M130 300C99 270 95 220 104 170C111 131 129 105 151 100C166 97 176 111 177 130C178 103 191 85 207 88C222 91 227 111 223 134C229 107 243 95 257 101C272 108 272 130 264 152C276 132 292 128 303 140C316 155 306 179 293 199C276 226 268 256 264 300Z" class="muted"/>
+  <path d="M177 130C179 153 181 173 183 194M223 134C215 157 211 177 210 196M264 152C250 168 241 186 235 203" class="ink" opacity=".55"/>
+  <path d="M177 181L210 174L240 186L236 211L211 218L180 209Z" class="ink"/>
+  <path d="M187 187L231 201" class="ink" opacity=".45"/>
+  <text class="label" x="200" y="344" text-anchor="middle">firmer stretcher</text>
+</g>
+
+</svg>

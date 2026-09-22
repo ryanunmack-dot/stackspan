@@ -49,6 +49,21 @@ h2 { color:var(--slate-900); font-size:1.25rem; margin:2rem 0 0.75rem; }
 .list .soon { color:var(--slate-500); }
 .list .soon strong { color:var(--slate-700); }
 .flag { background:#fff; border:1px dashed #fdba74; border-radius:0.75rem; padding:0.85rem 1rem; margin:1.25rem 0; font-size:0.9rem; color:var(--slate-600); }
+
+.card-media {
+  aspect-ratio: 16 / 10;
+  border-radius: 0.75rem;
+  background: #fff7ed;
+  margin: 1rem 0 0.5rem;
+  overflow: hidden;
+}
+.card-media img { width:100%; height:100%; object-fit:cover; display:block; }
+.card-media[data-slot^="diagram-"], .card-media.diagram {
+  margin-left: 0; margin-right: 0; background:#fff; border:1px solid var(--slate-200);
+}
+.card-media[data-slot="diagram-warmup-cues"] { aspect-ratio: 4 / 1; max-width: 640px; }
+.card-media[data-slot^="diagram-"] img, .card-media.diagram img { object-fit: contain; }
+.diagram-caption { margin: 0.35rem 0 1rem; font-size: 0.88rem; color: var(--slate-600); max-width: 40rem; }
 </style>
 </head>
 <body>
@@ -74,6 +89,10 @@ h2 { color:var(--slate-900); font-size:1.25rem; margin:2rem 0 0.75rem; }
 <div class="prose">
 <p>Day 1 is live from the locked CoS outline. Days 2–5 are placeholders until full pages ship. Soft surface OK; barefoot or wide/minimal shoes if floors are rough.</p>
 </div>
+<div class="card-media diagram" data-slot="diagram-warmup-cues" data-status="ready">
+<img src="/assets/diagrams/diagram-warmup-cues.svg" width="960" height="240" alt="Simple warm-up cues for toes, ankles, and standing." loading="lazy" />
+</div>
+<p class="diagram-caption muted">Wake toes and ankles before you train or walk.</p>
 <h2>Series days</h2>
 <ul class="list">
 <li><a class="primary" href="/mobility/foot-forward-warmup/day-1/">Day 1 — Wake the toes (~5 min)</a></li>

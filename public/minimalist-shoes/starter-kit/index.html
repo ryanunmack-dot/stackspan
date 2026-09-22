@@ -100,6 +100,21 @@ tr:last-child td { border-bottom:none; }
   overflow: hidden;
 }
 .card-media img { width:100%; height:100%; object-fit:cover; display:block; }
+.card-media[data-slot^="diagram-"],
+.card-media.diagram {
+  margin-left: 0;
+  margin-right: 0;
+  background: #fff;
+  border: 1px solid var(--line, #e2e8f0);
+}
+.card-media[data-slot="diagram-sit-stand-walk"] { aspect-ratio: 3 / 1; max-width: 720px; }
+.card-media[data-slot="diagram-gel-vs-stretcher"] { aspect-ratio: 2 / 1; max-width: 640px; }
+.card-media[data-slot="diagram-warmup-cues"] { aspect-ratio: 4 / 1; max-width: 640px; }
+.card-media[data-slot="diagram-fit-check"] { aspect-ratio: 2 / 1; max-width: 560px; }
+.card-media[data-slot^="diagram-"] img,
+.card-media.diagram img { object-fit: contain; }
+.diagram-caption { margin: 0.35rem 0 1rem; font-size: 0.88rem; color: var(--body, #475569); max-width: 40rem; }
+
 .card-cue { display:inline-block; margin-top:0.65rem; font-size:0.85rem; font-weight:600; color:var(--brand); }
 
 </style>
@@ -141,13 +156,13 @@ tr:last-child td { border-bottom:none; }
 
 <div class="cols" aria-label="Try-on A/B">
 <section class="panel">
-<div class="card-media" data-slot="thumb-asitvo" data-status="pending"><!-- Image Sourcing: 320x320 product thumb --></div>
+<div class="card-media" data-slot="thumb-asitvo" data-status="ready"><img src="/images/products/product-asitvo-barefoot.webp" width="800" height="800" alt="ASITVO minimalist barefoot cross-trainer sneaker" loading="lazy" /></div>
 <h2 style="margin:0">A — ASITVO (budget try-on)</h2>
 <p>Marketplace wide / barefoot trainer to feel toe-box room without mid-tier spend. Confirm drop and width on the live listing for your size.</p>
 <div class="btn-row"><a class="btn" href="/go/asitvo-barefoot">ASITVO on Amazon</a></div>
 </section>
 <section class="panel">
-<div class="card-media" data-slot="thumb-whitin" data-status="pending"><!-- Image Sourcing: 320x320 product thumb --></div>
+<div class="card-media" data-slot="thumb-whitin" data-status="ready"><img src="/images/products/product-whitin-barefoot.webp" width="800" height="800" alt="WHITIN barefoot minimalist sneaker" loading="lazy" /></div>
 <h2 style="margin:0">B — WHITIN (budget alternative)</h2>
 <p>Another low-cost wide / zero-drop option. Same rule: verify fit before checkout; return early if the box pinches.</p>
 <div class="btn-row"><a class="btn" href="/go/whitin-barefoot">WHITIN on Amazon</a></div>
@@ -155,7 +170,7 @@ tr:last-child td { border-bottom:none; }
 </div>
 
 <div class="card">
-<div class="card-media" data-slot="thumb-xero-prio" data-status="pending"><!-- Image Sourcing: 320x320 product thumb --></div>
+<div class="card-media" data-slot="thumb-xero-prio" data-status="ready"><img src="/images/products/product-xero-prio.webp" width="800" height="800" alt="Xero Shoes Prio barefoot training shoe" loading="lazy" /></div>
 <h3>Step-up — Xero Prio <span class="tag-known">Known</span></h3>
 <p>Everyday trainer when sizing and returns matter more than the cheapest clone. Buy after (or instead of) a budget try-on if you already know the geometry works.</p>
 <div class="btn-row">
@@ -210,6 +225,11 @@ tr:last-child td { border-bottom:none; }
 <li>When geometry feels boring (not dramatic), consider Xero Prio or stick with the budget pair</li>
 </ol>
 <p>Full fit checklist: <a href="/minimalist-shoes/fit-and-buying/">fit &amp; buying</a>. Shorter first-pair path: <a href="/minimalist-shoes/beginner/">beginner shortlist</a>. Spend tiers: <a href="/minimalist-shoes/compare/">compare</a>.</p>
+<p>Optional movement snack before long walks: <a href="/mobility/foot-forward-warmup/">foot-forward warm-up</a>.</p>
+<div class="card-media diagram" data-slot="diagram-warmup-cues" data-status="ready">
+<img src="/assets/diagrams/diagram-warmup-cues.svg" width="960" height="240" alt="Simple warm-up cues for toes, ankles, and standing." loading="lazy" />
+</div>
+<p class="diagram-caption muted">Wake toes and ankles before you train or walk.</p>
 </div>
 
 <div class="prose faq">

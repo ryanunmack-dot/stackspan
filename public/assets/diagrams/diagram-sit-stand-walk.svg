@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="360" viewBox="0 0 1080 360" role="img" aria-labelledby="title desc">
+  <title id="title">Sit, stand, walk movement strip</title><desc id="desc">Clean high-contrast movement line diagram.</desc>
+  <style>
+  .bg{fill:#fff}
+  .ink{fill:none;stroke:#0f172a;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+  .solid{fill:#0f172a}
+  .muted{fill:#f8fafc;stroke:#0f172a;stroke-width:3;stroke-linejoin:round}
+  .accent{fill:#ea580c;stroke:#ea580c;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+  .label{font-family:Arial,Helvetica,sans-serif;font-size:24px;font-weight:600;letter-spacing:.02em;fill:#0f172a}
+  .small{font-family:Arial,Helvetica,sans-serif;font-size:20px;font-weight:600;letter-spacing:.01em;fill:#0f172a}
+</style>
+  
+<rect class="bg" x="0" y="0" width="1080" height="360"/>
+<path d="M360 34V326M720 34V326" class="ink" opacity=".32"/>
+<!-- sit -->
+<g transform="translate(0,0)">
+  <path d="M62 132H312M278 132V300M312 132V300" class="ink"/>
+  <path d="M278 300H312" class="ink"/>
+  <circle cx="132" cy="82" r="25" class="muted"/>
+  <path d="M132 108C130 136 128 158 142 184L165 213" class="ink"/>
+  <path d="M142 184C164 188 189 198 216 218" class="ink"/>
+  <path d="M165 213L225 244L281 244" class="ink"/>
+  <path d="M281 244L281 300M281 300L309 300" class="ink"/>
+  <path d="M141 185L111 220L88 268L71 300L101 300" class="ink"/>
+  <path d="M71 300L101 300" class="ink"/>
+  <path d="M95 301C118 297 143 297 163 300" class="ink" opacity=".45"/>
+  <text class="label" x="174" y="335" text-anchor="middle">sit</text>
+</g>
+<!-- stand -->
+<g transform="translate(360,0)">
+  <path d="M62 132H312M278 132V300M312 132V300M278 300H312" class="ink"/>
+  <circle cx="134" cy="78" r="25" class="muted"/>
+  <path d="M134 104C133 135 136 166 146 196" class="ink"/>
+  <path d="M146 196L121 252L113 300M146 196L178 251L190 300" class="ink"/>
+  <path d="M113 300H83M190 300H219" class="ink"/>
+  <path d="M146 136L196 157L225 132" class="ink"/>
+  <path d="M146 136L111 160" class="ink"/>
+  <text class="label" x="180" y="335" text-anchor="middle">stand</text>
+</g>
+<!-- walk -->
+<g transform="translate(720,0)">
+  <circle cx="154" cy="76" r="25" class="muted"/>
+  <path d="M150 102C161 132 178 158 194 181" class="ink"/>
+  <path d="M194 181L247 226L296 226" class="ink"/>
+  <path d="M194 181L171 241L137 296L107 296" class="ink"/>
+  <path d="M155 142L111 178L81 221" class="ink"/>
+  <path d="M172 139L212 171L249 186" class="ink"/>
+  <path d="M296 226L312 226M107 296H78" class="ink"/>
+  <path d="M65 315H310" class="ink" opacity=".35"/>
+  <text class="label" x="180" y="335" text-anchor="middle">walk</text>
+</g>
+
+</svg>

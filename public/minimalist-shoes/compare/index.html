@@ -104,6 +104,21 @@ tr:last-child td { border-bottom:none; }
   overflow: hidden;
 }
 .card-media img { width:100%; height:100%; object-fit:cover; display:block; }
+.card-media[data-slot^="diagram-"],
+.card-media.diagram {
+  margin-left: 0;
+  margin-right: 0;
+  background: #fff;
+  border: 1px solid var(--line, #e2e8f0);
+}
+.card-media[data-slot="diagram-sit-stand-walk"] { aspect-ratio: 3 / 1; max-width: 720px; }
+.card-media[data-slot="diagram-gel-vs-stretcher"] { aspect-ratio: 2 / 1; max-width: 640px; }
+.card-media[data-slot="diagram-warmup-cues"] { aspect-ratio: 4 / 1; max-width: 640px; }
+.card-media[data-slot="diagram-fit-check"] { aspect-ratio: 2 / 1; max-width: 560px; }
+.card-media[data-slot^="diagram-"] img,
+.card-media.diagram img { object-fit: contain; }
+.diagram-caption { margin: 0.35rem 0 1rem; font-size: 0.88rem; color: var(--body, #475569); max-width: 40rem; }
+
 .card-cue { display:inline-block; margin-top:0.65rem; font-size:0.85rem; font-weight:600; color:var(--brand); }
 
 </style>
@@ -128,6 +143,10 @@ tr:last-child td { border-bottom:none; }
 <div class="start">
 <strong>Start here:</strong> Room for toes, zero/low drop, sole that bends. Under ~$40–60 marketplace (Barezoey, ASITVO, Airhas, WHITIN, UBFEN, Joomra trail) = cheap geometry try-on. ~$100–150 known brands (Xero Prio / X1 Low / women’s X1 Mid, XT Max, Vivo Motus) cost more and usually make sizing and returns less of a lottery. Shopping talk only — not medical advice.
 </div>
+<div class="card-media diagram" data-slot="diagram-fit-check" data-status="ready">
+<img src="/assets/diagrams/diagram-fit-check.svg" width="800" height="400" alt="Wide toe box leaves room for toes compared with a tapered shoe." loading="lazy" />
+</div>
+<p class="diagram-caption muted">Check the toe box: roomy beats tapered for toe space.</p>
 <div class="prose">
 <p>Marketplace “barefoot” listings can vary by size and color — check the toe box and drop on the product page before you buy. We only show /go routes that already exist.</p>
 </div>
@@ -284,7 +303,7 @@ tr:last-child td { border-bottom:none; }
 
 <div class="cards" aria-label="Wide trainer cards (mobile)">
 <div class="card">
-<div class="card-media" data-slot="thumb-asitvo" data-status="pending"><!-- Image Sourcing: 320x320 product thumb --></div>
+<div class="card-media" data-slot="thumb-asitvo" data-status="ready"><img src="/images/products/product-asitvo-barefoot.webp" width="800" height="800" alt="ASITVO minimalist barefoot cross-trainer sneaker" loading="lazy" /></div>
 <h3>ASITVO barefoot trainers <span class="tag marketplace">Marketplace</span></h3>
 <p class="meta">Under $40 · Roomy everyday splay · Typically zero-drop / flexible</p>
 <p>Cheap daily wide trainer to test the shape.</p>
@@ -294,7 +313,7 @@ tr:last-child td { border-bottom:none; }
 </div>
 </div>
 <div class="card">
-<div class="card-media" data-slot="thumb-airhas" data-status="pending"><!-- Image Sourcing: 320x320 product thumb --></div>
+<div class="card-media" data-slot="thumb-airhas" data-status="ready"><img src="/images/products/product-airhas-workout.webp" width="800" height="800" alt="AIRHAS barefoot workout training sneaker" loading="lazy" /></div>
 <h3>Airhas workout / training <span class="tag marketplace">Marketplace</span></h3>
 <p class="meta">Under $40 · Wide-ish budget last · Low stack / bendy sole</p>
 <p>Budget backup for walking / light training.</p>
@@ -304,7 +323,7 @@ tr:last-child td { border-bottom:none; }
 </div>
 </div>
 <div class="card">
-<div class="card-media" data-slot="thumb-whitin" data-status="pending"><!-- Image Sourcing: 320x320 product thumb --></div>
+<div class="card-media" data-slot="thumb-whitin" data-status="ready"><img src="/images/products/product-whitin-barefoot.webp" width="800" height="800" alt="WHITIN barefoot minimalist sneaker" loading="lazy" /></div>
 <h3>WHITIN barefoot minimalist <span class="tag marketplace">Marketplace</span></h3>
 <p class="meta">$40–60 · Wide daily sneaker · Zero-drop style flex</p>
 <p>Mid-budget marketplace try-on / daily wear.</p>
@@ -313,7 +332,7 @@ tr:last-child td { border-bottom:none; }
 </div>
 </div>
 <div class="card">
-<div class="card-media" data-slot="thumb-barezoey" data-status="pending"><!-- Image Sourcing: 320x320 product thumb --></div>
+<div class="card-media" data-slot="thumb-barezoey" data-status="ready"><img src="/images/products/product-barezoey-wide-barefoot.webp" width="800" height="800" alt="Barezoey wide zero-drop barefoot sneaker" loading="lazy" /></div>
 <h3>Barezoey wide zero-drop <span class="tag marketplace">Marketplace</span></h3>
 <p class="meta">$40–60 · Wide barefoot-class sneaker · Zero-drop (store byline Barezoey)</p>
 <p>Wide everyday try-on when you want more splay than a fashion trainer.</p>
@@ -322,7 +341,7 @@ tr:last-child td { border-bottom:none; }
 </div>
 </div>
 <div class="card">
-<div class="card-media" data-slot="thumb-ubfen" data-status="pending"><!-- Image Sourcing: 320x320 product thumb --></div>
+<div class="card-media" data-slot="thumb-ubfen" data-status="ready"><img src="/images/products/product-ubfen-minimalist-barefoot.webp" width="800" height="800" alt="UBFEN minimalist barefoot sneaker" loading="lazy" /></div>
 <h3>UBFEN minimalist barefoot <span class="tag marketplace">Marketplace</span></h3>
 <p class="meta">$40–60 · Roomy forefoot · Low/zero-drop flex</p>
 <p>Another marketplace geometry option next to WHITIN / Barezoey.</p>
@@ -331,7 +350,7 @@ tr:last-child td { border-bottom:none; }
 </div>
 </div>
 <div class="card">
-<div class="card-media" data-slot="thumb-joomra" data-status="pending"><!-- Image Sourcing: 320x320 product thumb --></div>
+<div class="card-media" data-slot="thumb-joomra" data-status="ready"><img src="/images/products/product-joomra-trail-barefoot.webp" width="800" height="800" alt="Joomra trail barefoot minimalist shoe" loading="lazy" /></div>
 <h3>Joomra trail barefoot <span class="tag marketplace">Marketplace</span></h3>
 <p class="meta">$40–60 · Trail-leaning outsole · Zero/low drop</p>
 <p>Budget trail days — see trail compare for Xero Z-Trail.</p>
@@ -341,7 +360,7 @@ tr:last-child td { border-bottom:none; }
 </div>
 </div>
 <div class="card">
-<div class="card-media" data-slot="thumb-xero-prio" data-status="pending"><!-- Image Sourcing: 320x320 product thumb --></div>
+<div class="card-media" data-slot="thumb-xero-prio" data-status="ready"><img src="/images/products/product-xero-prio.webp" width="800" height="800" alt="Xero Shoes Prio barefoot training shoe" loading="lazy" /></div>
 <h3>Xero Prio <span class="tag tag-known">Known</span></h3>
 <p class="meta">$100–150 · Foot-shaped splay · Zero-drop thin sole</p>
 <p>Everyday known-brand trainer when sizing matters.</p>
@@ -351,7 +370,7 @@ tr:last-child td { border-bottom:none; }
 </div>
 </div>
 <div class="card">
-<div class="card-media" data-slot="thumb-xero-xt-max" data-status="pending"><!-- Image Sourcing: 320x320 product thumb --></div>
+<div class="card-media" data-slot="thumb-xero-xt-max" data-status="ready"><img src="/images/products/product-xero-xt-max.webp" width="800" height="800" alt="Xero Shoes XT Max barefoot training shoe" loading="lazy" /></div>
 <h3>Xero XT Max <span class="tag tag-known">Known</span></h3>
 <p class="meta">$100–150 · Roomy forefoot · Zero-drop, more cushion</p>
 <p>Same family as Prio, with more cushion.</p>
@@ -361,7 +380,7 @@ tr:last-child td { border-bottom:none; }
 </div>
 </div>
 <div class="card">
-<div class="card-media" data-slot="thumb-xero-x1-low" data-status="pending"><!-- Image Sourcing: 320x320 product thumb --></div>
+<div class="card-media" data-slot="thumb-xero-x1-low" data-status="ready"><img src="/images/products/product-xero-x1-low.webp" width="800" height="800" alt="Xero Shoes X1 Low barefoot training shoe" loading="lazy" /></div>
 <h3>Xero X1 Low <span class="tag tag-known">Known</span></h3>
 <p class="meta">$100–150 · Foot-shaped X1 last · Zero-drop low cut</p>
 <p>Known-brand next step when you want the newer X1 low cut.</p>
@@ -371,7 +390,7 @@ tr:last-child td { border-bottom:none; }
 </div>
 </div>
 <div class="card">
-<div class="card-media" data-slot="thumb-xero-x1-mid" data-status="pending"><!-- Image Sourcing: 320x320 product thumb --></div>
+<div class="card-media" data-slot="thumb-xero-x1-mid" data-status="ready"><img src="/images/products/product-xero-x1-mid.webp" width="800" height="800" alt="Xero Shoes X1 Mid barefoot training shoe" loading="lazy" /></div>
 <h3>Xero X1 Mid <span class="tag tag-known">Known</span> <span class="tag">Women’s</span></h3>
 <p class="meta">$100–150 · Women’s Mid listing · Higher collar, X1 geometry</p>
 <p>Women’s Mid cut when you want ankle coverage on the X1 last.</p>
@@ -381,7 +400,7 @@ tr:last-child td { border-bottom:none; }
 </div>
 </div>
 <div class="card">
-<div class="card-media" data-slot="thumb-vivo-motus" data-status="pending"><!-- Image Sourcing: 320x320 product thumb --></div>
+<div class="card-media" data-slot="thumb-vivo-motus" data-status="ready"><img src="/images/products/product-vivobarefoot-motus.webp" width="800" height="800" alt="Vivobarefoot Motus Strength zero-drop training shoe" loading="lazy" /></div>
 <h3>Vivobarefoot Motus <span class="tag tag-known">Known</span></h3>
 <p class="meta">$100–150 · Wide Motus last · Zero-drop training platform</p>
 <p>Gym / garage add-on after a first pair.</p>

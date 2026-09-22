@@ -112,6 +112,21 @@ tr:last-child td { border-bottom:none; }
   overflow: hidden;
 }
 .card-media img { width:100%; height:100%; object-fit:cover; display:block; }
+.card-media[data-slot^="diagram-"],
+.card-media.diagram {
+  margin-left: 0;
+  margin-right: 0;
+  background: #fff;
+  border: 1px solid var(--line, #e2e8f0);
+}
+.card-media[data-slot="diagram-sit-stand-walk"] { aspect-ratio: 3 / 1; max-width: 720px; }
+.card-media[data-slot="diagram-gel-vs-stretcher"] { aspect-ratio: 2 / 1; max-width: 640px; }
+.card-media[data-slot="diagram-warmup-cues"] { aspect-ratio: 4 / 1; max-width: 640px; }
+.card-media[data-slot="diagram-fit-check"] { aspect-ratio: 2 / 1; max-width: 560px; }
+.card-media[data-slot^="diagram-"] img,
+.card-media.diagram img { object-fit: contain; }
+.diagram-caption { margin: 0.35rem 0 1rem; font-size: 0.88rem; color: var(--body, #475569); max-width: 40rem; }
+
 .card-cue { display:inline-block; margin-top:0.65rem; font-size:0.85rem; font-weight:600; color:var(--brand); }
 
 </style>
@@ -161,8 +176,10 @@ tr:last-child td { border-bottom:none; }
 <p>Day-rhythm talk — not treatment. Optional warm-up: <a href="/mobility/foot-forward-warmup/">foot-forward warm-up</a>.</p>
 </div>
 
-<div class="card-media" data-slot="diagram-sit-stand-walk" data-status="pending">
-<!-- Image Sourcing: 960x600 sit/stand/walk rhythm diagram --></div>
+<div class="card-media diagram" data-slot="diagram-sit-stand-walk" data-status="ready">
+<img src="/assets/diagrams/diagram-sit-stand-walk.svg" width="1080" height="360" alt="Three simple desk habits: sit, stand, and short walks." loading="lazy" />
+</div>
+<p class="diagram-caption muted">Sit / stand / walk on a rhythm you can keep — habits first.</p>
 
 <div class="cols" aria-label="Habits vs equipment">
 <section class="panel">
@@ -229,25 +246,25 @@ tr:last-child td { border-bottom:none; }
 
 <div class="cards gear-cards" aria-label="Standing desk kit gear cards">
 <div class="card">
-<div class="card-media" data-slot="thumb-versadesk" data-status="pending"><!-- Image Sourcing: 320x320 product thumb --></div>
+<div class="card-media" data-slot="thumb-versadesk" data-status="ready"><img src="/images/products/product-versadesk-powerpro.webp" width="800" height="600" alt="VersaDesk PowerPro standing desk converter" loading="lazy" /></div>
 <h3>VersaDesk PowerPro 36&quot; <span class="tag">Featured</span></h3>
 <p>Electric sit/stand converter — our main pick. Confirm live specs and footprint.</p>
 <div class="btn-row"><a class="btn" href="/go/versadesk-powerpro">VersaDesk on Amazon</a></div>
 </div>
 <div class="card">
-<div class="card-media" data-slot="thumb-mount-it" data-status="pending"><!-- Image Sourcing: 320x320 product thumb --></div>
+<div class="card-media" data-slot="thumb-mount-it" data-status="ready"><img src="/images/products/product-mount-it-converter.webp" width="800" height="600" alt="Mount-It sit-stand desk converter" loading="lazy" /></div>
 <h3>Mount-It MI-7927E <span class="tag tag-budget">Budget / alt</span></h3>
 <p>Budget/alt converter. Compare height, weight limit, and noise vs VersaDesk.</p>
 <div class="btn-row"><a class="btn btn-secondary" href="/go/mount-it-converter">Mount-It on Amazon</a></div>
 </div>
 <div class="card">
-<div class="card-media" data-slot="thumb-cubii" data-status="pending"><!-- Image Sourcing: 320x320 product thumb --></div>
+<div class="card-media" data-slot="thumb-cubii" data-status="ready"><img src="/images/products/product-cubii-jr1.webp" width="800" height="600" alt="Cubii JR1 under-desk elliptical" loading="lazy" /></div>
 <h3>Cubii JR1 <span class="tag">Seated move</span></h3>
 <p>Under-desk elliptical for fence-sitters who want movement without standing yet.</p>
 <div class="btn-row"><a class="btn" href="/go/cubii-jr1">Cubii JR1 on Amazon</a></div>
 </div>
 <div class="card">
-<div class="card-media" data-slot="thumb-walking-pad" data-status="pending"><!-- Image Sourcing: 320x320 product thumb --></div>
+<div class="card-media" data-slot="thumb-walking-pad" data-status="ready"><img src="/images/products/product-walking-pad.webp" width="800" height="600" alt="Under-desk walking pad treadmill" loading="lazy" /></div>
 <h3>Walking pad <span class="tag tag-soft">Soft</span></h3>
 <p>Under-desk forward walking at low speed. Separate from reverse treadmills.</p>
 <div class="btn-row"><a class="btn btn-secondary" href="/go/walking-pad">Walking pad on Amazon</a></div>
