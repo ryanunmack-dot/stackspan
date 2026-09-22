@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="240" viewBox="0 0 960 240" role="img" aria-labelledby="title desc">
+  <title id="title">Toes, ankles, stand warm-up cues</title><desc id="desc">Clean high-contrast movement line diagram.</desc>
+  <style>
+  .bg{fill:#fff}
+  .ink{fill:none;stroke:#0f172a;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+  .solid{fill:#0f172a}
+  .muted{fill:#f8fafc;stroke:#0f172a;stroke-width:3;stroke-linejoin:round}
+  .accent{fill:#ea580c;stroke:#ea580c;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+  .label{font-family:Arial,Helvetica,sans-serif;font-size:24px;font-weight:600;letter-spacing:.02em;fill:#0f172a}
+  .small{font-family:Arial,Helvetica,sans-serif;font-size:20px;font-weight:600;letter-spacing:.01em;fill:#0f172a}
+</style>
+  
+<rect class="bg" x="0" y="0" width="960" height="240"/>
+<path d="M320 28V212M640 28V212" class="ink" opacity=".25"/>
+<!-- toes icon -->
+<g transform="translate(0,0)">
+  <path d="M117 161C105 140 108 102 121 75C131 55 149 51 159 66C168 47 189 48 196 68C205 50 224 56 227 77C237 63 254 71 253 91C252 117 239 151 218 172C199 190 160 190 134 178Z" class="muted"/>
+  <path d="M159 66L157 105M196 68L188 108M227 77L214 115M253 91L235 123" class="ink"/>
+  <path d="M121 75L111 59M196 68L199 48M253 91L263 74" class="ink"/>
+  <text class="label" x="160" y="207" text-anchor="middle">toes</text>
+</g>
+<!-- ankles icon -->
+<g transform="translate(320,0)">
+  <path d="M130 51V108C130 124 124 137 113 148L92 168C84 176 88 187 100 188H226C238 187 242 176 234 168L213 148C202 137 196 124 196 108V51" class="muted"/>
+  <circle cx="130" cy="126" r="10" class="ink"/>
+  <circle cx="196" cy="126" r="10" class="ink"/>
+  <path d="M122 51H204" class="ink"/>
+  <text class="label" x="160" y="207" text-anchor="middle">ankles</text>
+</g>
+<!-- stand icon, lower-body only -->
+<g transform="translate(640,0)">
+  <circle cx="160" cy="42" r="22" class="muted"/>
+  <path d="M160 64V114M160 114L128 173M160 114L192 173M128 173L108 190H75M192 173L213 190H245" class="ink"/>
+  <path d="M142 82H178" class="ink"/>
+  <text class="label" x="160" y="207" text-anchor="middle">stand</text>
+</g>
+
+</svg>

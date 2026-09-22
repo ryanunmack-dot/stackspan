@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" viewBox="0 0 800 400" role="img" aria-labelledby="title desc">
+  <title id="title">Narrow vs wide toe box fit check</title>
+  <desc id="desc">Top-down shoe silhouettes: tapered narrow toe box versus wide foot-shaped toe box.</desc>
+  <style>
+    .bg{fill:#fff}
+    .ink{fill:none;stroke:#0f172a;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+    .fill-ink{fill:#0f172a}
+    .soft{fill:#f1f5f9;stroke:#0f172a;stroke-width:3;stroke-linejoin:round}
+    .wide{fill:#fff7ed;stroke:#ea580c;stroke-width:4;stroke-linejoin:round}
+    .toe{fill:none;stroke:#0f172a;stroke-width:2;opacity:.55}
+    .label{font-family:Arial,Helvetica,sans-serif;font-size:24px;font-weight:600;fill:#0f172a}
+  </style>
+  <rect class="bg" width="800" height="400"/>
+  <path d="M400 36V364" class="ink" opacity=".25"/>
+
+  <!-- narrow tapered last (top-down shoe) -->
+  <g transform="translate(70,28)">
+    <!-- shoe outline tapering at toe -->
+    <path class="soft" d="M130 20
+      C95 28 72 55 62 95
+      C50 145 48 200 55 250
+      C60 285 78 310 110 318
+      C145 326 185 318 210 295
+      C235 272 248 235 250 195
+      C252 145 240 95 215 55
+      C195 30 165 18 130 20 Z"/>
+    <!-- toes cramped in taper -->
+    <ellipse class="toe" cx="95" cy="70" rx="14" ry="22"/>
+    <ellipse class="toe" cx="118" cy="58" rx="12" ry="20"/>
+    <ellipse class="toe" cx="138" cy="55" rx="11" ry="19"/>
+    <ellipse class="toe" cx="156" cy="60" rx="10" ry="18"/>
+    <ellipse class="toe" cx="172" cy="72" rx="9" ry="16"/>
+    <text class="label" x="155" y="355" text-anchor="middle">narrow</text>
+  </g>
+
+  <!-- wide foot-shaped toe box -->
+  <g transform="translate(470,28)">
+    <path class="wide" d="M130 18
+      C88 22 55 52 45 95
+      C32 150 35 210 48 260
+      C58 295 82 318 120 326
+      C165 335 215 322 245 290
+      C270 265 282 225 285 180
+      C288 125 270 70 230 40
+      C200 22 165 16 130 18 Z"/>
+    <!-- toes with room -->
+    <ellipse class="toe" cx="78" cy="78" rx="16" ry="24"/>
+    <ellipse class="toe" cx="108" cy="58" rx="14" ry="22"/>
+    <ellipse class="toe" cx="136" cy="52" rx="13" ry="21"/>
+    <ellipse class="toe" cx="162" cy="58" rx="12" ry="20"/>
+    <ellipse class="toe" cx="186" cy="74" rx="11" ry="18"/>
+    <text class="label" x="160" y="355" text-anchor="middle">wide</text>
+  </g>
+</svg>

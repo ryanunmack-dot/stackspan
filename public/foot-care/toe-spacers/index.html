@@ -94,6 +94,21 @@ tr:last-child td { border-bottom:none; }
   overflow: hidden;
 }
 .card-media img { width:100%; height:100%; object-fit:cover; display:block; }
+.card-media[data-slot^="diagram-"],
+.card-media.diagram {
+  margin-left: 0;
+  margin-right: 0;
+  background: #fff;
+  border: 1px solid var(--line, #e2e8f0);
+}
+.card-media[data-slot="diagram-sit-stand-walk"] { aspect-ratio: 3 / 1; max-width: 720px; }
+.card-media[data-slot="diagram-gel-vs-stretcher"] { aspect-ratio: 2 / 1; max-width: 640px; }
+.card-media[data-slot="diagram-warmup-cues"] { aspect-ratio: 4 / 1; max-width: 640px; }
+.card-media[data-slot="diagram-fit-check"] { aspect-ratio: 2 / 1; max-width: 560px; }
+.card-media[data-slot^="diagram-"] img,
+.card-media.diagram img { object-fit: contain; }
+.diagram-caption { margin: 0.35rem 0 1rem; font-size: 0.88rem; color: var(--body, #475569); max-width: 40rem; }
+
 .card-cue { display:inline-block; margin-top:0.65rem; font-size:0.85rem; font-weight:600; color:var(--brand); }
 
 </style>
@@ -124,7 +139,10 @@ tr:last-child td { border-bottom:none; }
 </div>
 
 <h2>Gel vs stretcher</h2>
-<div class="card-media" data-slot="diagram-gel-vs-stretcher" data-status="pending"><!-- Image Sourcing: 960x600 gel vs stretcher diagram --></div>
+<div class="card-media diagram" data-slot="diagram-gel-vs-stretcher" data-status="ready">
+<img src="/assets/diagrams/diagram-gel-vs-stretcher.svg" width="800" height="400" alt="Soft gel toe spacers compared with a firmer full-foot stretcher — line diagram only." loading="lazy" />
+</div>
+<p class="diagram-caption muted">Soft gel for short sessions; firmer stretcher for dedicated rest — shopping talk, not treatment.</p>
 <div class="table-wrap" role="region" aria-label="Gel toe spacers vs toe stretcher comparison">
 <table>
 <thead>
@@ -167,7 +185,7 @@ tr:last-child td { border-bottom:none; }
 
 <div class="cards" aria-label="Gel vs stretcher cards">
 <div class="card">
-<div class="card-media" data-slot="thumb-gel" data-status="pending"><!-- Image Sourcing: 320x320 gel pack thumb --></div>
+<div class="card-media" data-slot="thumb-gel" data-status="ready"><img src="/images/products/product-toe-spacers-gel.webp" width="800" height="800" alt="Gel toe spacer separator pack" loading="lazy" /></div>
 <h3>Gel pack spacers</h3>
 <p><strong>What it is:</strong> Soft gel wedges or loops between toes; usually multi-packs.</p>
 <p><strong>Best for:</strong> Short at-home sessions; try spacing before a firmer tool; easy on/off.</p>
@@ -180,7 +198,7 @@ tr:last-child td { border-bottom:none; }
 <p class="meta">Other marketplace listings if size, material, or price looks better — not a ranking.</p>
 </div>
 <div class="card">
-<div class="card-media" data-slot="thumb-yogatoes" data-status="pending"><!-- Image Sourcing: 320x320 YogaToes thumb --></div>
+<div class="card-media" data-slot="thumb-yogatoes" data-status="ready"><img src="/images/products/product-yogatoes-gems.webp" width="800" height="800" alt="YogaToes GEMS toe stretcher spacer" loading="lazy" /></div>
 <h3>Stretcher / separator — YogaToes GEMS</h3>
 <p><strong>What it is:</strong> Firmer full-foot frame — more structured hold than soft gel wedges.</p>
 <p><strong>Best for:</strong> Dedicated rest sessions when you want a sturdier hold — not all-day in-shoe gear.</p>
