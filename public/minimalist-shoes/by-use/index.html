@@ -11,7 +11,7 @@
 @theme { --color-brand: #ea580c; }
 </style>
 <style>
-:root { --brand:#ea580c; --brand-dark:#c2410c; --slate-50:#f8fafc; --slate-200:#e2e8f0; --slate-500:#64748b; --slate-600:#475569; --slate-800:#1e293b; --slate-900:#0f172a; }
+:root { --brand:#ea580c; --brand-dark:#c2410c; --slate-50:#f8fafc; --slate-200:#e2e8f0; --slate-500:#64748b; --slate-600:#475569; --slate-800:#1e293b; --slate-900:#0f172a; --radius:0.75rem; --brand-soft:#fff7ed; --line:#e2e8f0; }
 * { box-sizing: border-box; }
 body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background:var(--slate-50); color:var(--slate-800); line-height:1.55; min-height:100vh; display:flex; flex-direction:column; }
 a { color:var(--brand); text-decoration:none; }
@@ -49,6 +49,27 @@ h2 { color:var(--slate-900); font-size:1.2rem; margin:0; }
 .tag { display:inline-block; font-size:0.7rem; font-weight:600; letter-spacing:0.03em; text-transform:uppercase; padding:0.15rem 0.45rem; border-radius:999px; background:#ffedd5; color:var(--brand-dark); margin-left:0.35rem; vertical-align:middle; }
 .tag-known { background:#ecfdf5; color:#047857; }
 .flag { background:#fff; border:1px dashed #fdba74; border-radius:0.75rem; padding:0.85rem 1rem; margin:1.25rem 0; font-size:0.9rem; color:var(--slate-600); }
+.card-media {
+  aspect-ratio: 16 / 10;
+  border-radius: calc(var(--radius) - 4px);
+  background: var(--brand-soft);
+  margin: -0.15rem -0.15rem 0.75rem;
+  overflow: hidden;
+}
+.card-media img { width:100%; height:100%; object-fit:cover; display:block; }
+.card-media[data-slot^="diagram-"],
+.card-media.diagram {
+  margin-left: 0;
+  margin-right: 0;
+  background: #fff;
+  border: 1px solid var(--line, #e2e8f0);
+}
+.card-media[data-slot="diagram-sit-stand-walk"] { aspect-ratio: 3 / 1; max-width: 720px; }
+.card-media[data-slot="diagram-gel-vs-stretcher"] { aspect-ratio: 2 / 1; max-width: 640px; }
+.card-media[data-slot="diagram-warmup-cues"] { aspect-ratio: 4 / 1; max-width: 640px; }
+.card-media[data-slot="diagram-fit-check"] { aspect-ratio: 2 / 1; max-width: 560px; }
+.card-media[data-slot^="diagram-"] img,
+.card-media.diagram img { object-fit: contain; }
 </style>
 </head>
 <body>
@@ -76,6 +97,7 @@ h2 { color:var(--slate-900); font-size:1.2rem; margin:0; }
 </div>
 
 <section class="use" id="standing-desk">
+<div class="card-media" data-slot="thumb-xero-prio" data-status="ready"><img src="/images/products/product-xero-prio.webp" width="800" height="800" alt="Xero Shoes Prio barefoot training shoe" loading="lazy" /></div>
 <h2>Standing desk / indoor all-day feet</h2>
 <p>You need room for toes and a sole you can wear for hours without a “race day” feel. Start budget with ASITVO or WHITIN; step up to Xero Prio if you want a known trainer brand.</p>
 <div class="btn-row">
@@ -86,6 +108,7 @@ h2 { color:var(--slate-900); font-size:1.2rem; margin:0; }
 </section>
 
 <section class="use" id="gym">
+<div class="card-media" data-slot="thumb-vivo-motus" data-status="ready"><img src="/images/products/product-vivobarefoot-motus.webp" width="800" height="800" alt="Vivobarefoot Motus Strength zero-drop training shoe" loading="lazy" /></div>
 <h2>Gym / strength / garage training</h2>
 <p>Stable zero-drop trainers for lifting and mixed sessions. Motus and XT Max sit in known-brand territory; AIRHAS is the cheap try-on.</p>
 <div class="btn-row">
@@ -96,6 +119,7 @@ h2 { color:var(--slate-900); font-size:1.2rem; margin:0; }
 </section>
 
 <section class="use" id="sandbag">
+<div class="card-media" data-slot="thumb-wolf-sandbag-100" data-status="ready"><img src="/images/products/sandbags/product-wolf-sandbag-100.webp" width="800" height="800" alt="WOLF Tactical soft sandbag, 100 lb" loading="lazy" /></div>
 <h2>Garage / functional training tools (not footwear)</h2>
 <p>Soft sandbags for odd-object lifts and conditioning — separate from shoes. WOLF 100 and 150 lb capacity bags are the budget / starter pick if you train that style at home. Honest note: the coated 1000D fabric can feel slick in the hands, and chalk doesn't help much.</p>
 <p>Step-up bags from Cerberus Strength, Freedom Strength and Rogue are sold direct by the brands. Look for uncoated 1050D ballistic Cordura, a grippy rather than coated shell, and about a 16-inch diameter (the common strongman standard; Freedom's run about 15 inches).</p>
@@ -106,17 +130,19 @@ h2 { color:var(--slate-900); font-size:1.2rem; margin:0; }
 </section>
 
 <section class="use" id="trail">
+<div class="card-media" data-slot="thumb-altra-lone-peak-9" data-status="ready"><img src="/images/products/shoes/product-altra-lone-peak-9.webp" width="800" height="800" alt="Altra Lone Peak 9 trail running shoe, side view" loading="lazy" /></div>
 <h2>Trail / hiking</h2>
-<p>Altra Lone Peak is the recognizable zero-drop trail name in our set (more stack than ultra-minimal). Hike Canyon and Peluva Strand are alternatives — Peluva is a 5-toe niche. Vibram FiveFingers is the classic 5-toe known brand (Born to Run cultural OG) — niche fit, not a first trail default.</p>
+<p>Altra Lone Peak is the recognizable zero-drop trail name in our set (more stack than ultra-minimal). Hike Canyon and Peluva Strand are alternatives — Peluva is a 5-toe niche. The Vibram FiveFingers link is the V-Run, a 5-toe road-running shoe for pavement and treadmill, not a trail shoe. It sits here only for 5-toe fans; niche fit.</p>
 <div class="btn-row">
 <a class="btn" href="/go/altra-lone-peak-9">Altra Lone Peak 9 <span class="tag tag-known">Known</span></a>
 <a class="btn btn-secondary" href="/go/hike-canyon">Hike Canyon</a>
 <a class="btn btn-secondary" href="/go/pelluva-strand">Peluva Strand <span class="tag tag-known">Known</span></a>
-<a class="btn btn-secondary" href="/go/vibram-fivefingers">Vibram FiveFingers <span class="tag tag-known">Known</span></a>
+<a class="btn btn-secondary" href="/go/vibram-fivefingers">Vibram V-Run (road) <span class="tag tag-known">Known</span></a>
 </div>
 </section>
 
 <section class="use" id="casual">
+<div class="card-media" data-slot="thumb-vivobarefoot-gobi" data-status="ready"><img src="/images/products/shoes/product-vivobarefoot-gobi.webp" width="800" height="800" alt="Vivobarefoot Gobi II leather sneaker, black" loading="lazy" /></div>
 <h2>Casual / leather / “looks like a shoe”</h2>
 <p>When you want barefoot geometry without screaming gym shoe. Gobi is the known leather lifestyle pick; HOBIBEAR is the budget leather/boot-style option.</p>
 <div class="btn-row">
@@ -126,6 +152,7 @@ h2 { color:var(--slate-900); font-size:1.2rem; margin:0; }
 </section>
 
 <section class="use" id="water">
+<div class="card-media" data-slot="thumb-xero-z-trail-ev" data-status="ready"><img src="/images/products/shoes/product-xero-z-trail-ev.webp" width="800" height="800" alt="Xero Shoes Z-Trail EV hiking sandal, side view" loading="lazy" /></div>
 <h2>Water / beach / wet days</h2>
 <p>Sport sandal or sock-style water shoe — not your daily trainer. Xero Z-Trail EV is the known sport sandal in our set; BULLIANT is the cheap sock / slipper option.</p>
 <div class="btn-row">
@@ -135,6 +162,7 @@ h2 { color:var(--slate-900); font-size:1.2rem; margin:0; }
 </section>
 
 <section class="use" id="movement">
+<div class="card-media" data-slot="thumb-kung-fu-shoes" data-status="ready"><img src="/images/products/shoes/product-kung-fu-shoes.webp" width="800" height="800" alt="White canvas kung fu sneakers with red and blue stripes" loading="lazy" /></div>
 <h2>Movement culture / martial arts floor</h2>
 <p>Classic thin-sole kung-fu sneakers for traditional floor work — not a modern barefoot trainer. Skip unless that niche is the point.</p>
 <div class="btn-row">
