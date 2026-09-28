@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="360" viewBox="0 0 1080 360" role="img" aria-labelledby="title desc">
+  <title id="title">Three foot shapes: wide, narrow, high volume</title><desc id="desc">Neutral outlines of a wide foot and a narrow foot seen from above, and a side view of a foot with a tall instep line to show high volume.</desc>
+  <style>
+  .bg{fill:#fff}
+  .ink{fill:none;stroke:#0f172a;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+  .solid{fill:#0f172a}
+  .muted{fill:#f8fafc;stroke:#0f172a;stroke-width:3;stroke-linejoin:round}
+  .accent{fill:#ea580c;stroke:#ea580c;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+  .label{font-family:Arial,Helvetica,sans-serif;font-size:24px;font-weight:600;letter-spacing:.02em;fill:#0f172a}
+  .small{font-family:Arial,Helvetica,sans-serif;font-size:20px;font-weight:600;letter-spacing:.01em;fill:#0f172a}
+</style>
+<rect class="bg" x="0" y="0" width="1080" height="360"/>
+<path d="M360 34V326M720 34V326" class="ink" opacity=".25"/>
+<g><path d="M 170.6 282.4 C 151.9 282.4 140.4 266.4 141.8 244.0 C 142.3 220.0 144.2 197.6 138.2 173.6 C 131.6 149.6 116.6 124.0 116.6 100.0 C 116.6 68.0 118.5 40.8 136.1 34.4 C 151.7 29.6 159.5 40.8 159.5 60.0 C 161.5 47.2 165.4 36.0 175.1 36.0 C 184.9 36.0 187.8 47.2 185.9 63.2 C 187.8 52.0 191.7 44.8 198.5 44.8 C 206.4 44.8 208.3 54.4 206.4 69.6 C 209.3 59.2 214.2 54.4 220.0 54.4 C 226.8 54.4 228.8 64.0 225.9 77.6 C 229.8 70.4 233.7 66.4 238.6 68.0 C 244.4 70.4 244.4 80.8 240.5 93.6 C 244.4 117.6 232.7 144.8 220.3 172.0 C 209.4 197.6 201.5 220.0 200.9 244.0 C 200.9 266.4 189.4 282.4 170.6 282.4 Z" class="ink"/><text class="label" x="180" y="335" text-anchor="middle">wide</text></g>
+<g><path d="M 531.7 282.4 C 515.0 282.4 504.8 266.4 506.1 244.0 C 507.4 220.0 511.4 197.6 509.1 173.6 C 506.7 149.6 499.4 124.0 499.4 100.0 C 499.4 68.0 500.7 40.8 511.9 34.4 C 521.9 29.6 526.9 40.8 526.9 60.0 C 528.1 47.2 530.6 36.0 536.9 36.0 C 543.1 36.0 545.0 47.2 543.7 63.2 C 545.0 52.0 547.5 44.8 551.9 44.8 C 556.8 44.8 558.1 54.4 556.8 69.6 C 558.7 59.2 561.8 54.4 565.6 54.4 C 570.0 54.4 571.2 64.0 569.3 77.6 C 571.8 70.4 574.3 66.4 577.4 68.0 C 581.2 70.4 581.2 80.8 578.7 93.6 C 581.2 117.6 575.8 144.8 569.7 172.0 C 563.5 197.6 558.5 220.0 558.6 244.0 C 558.6 266.4 548.3 282.4 531.7 282.4 Z" class="ink"/><text class="label" x="540" y="335" text-anchor="middle">narrow</text></g>
+<g transform="translate(750,10)"><path d="M86 70 C86 124 80 172 60 202 C42 228 34 252 44 262 L236 262 C256 262 266 256 266 246 C266 234 254 228 236 224 C204 214 176 196 150 164 C136 146 132 118 132 70" class="ink"/><path d="M28 272H280" class="ink" opacity=".35"/>
+<text class="label" x="150" y="325" text-anchor="middle">high volume</text></g>
+</svg>

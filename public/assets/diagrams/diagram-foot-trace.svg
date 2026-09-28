@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="560" viewBox="0 0 1120 560" role="img" aria-labelledby="title desc">
+  <title id="title">Trace and measure your foot, then compare to a toe box outline</title><desc id="desc">Left: a bare foot outline traced on paper with a pencil, with simple length and width dimension arrows. Right: the traced foot outline inside a wider foot-shaped toe box outline.</desc>
+  <style>
+  .bg{fill:#fff}
+  .ink{fill:none;stroke:#0f172a;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+  .solid{fill:#0f172a}
+  .muted{fill:#f8fafc;stroke:#0f172a;stroke-width:3;stroke-linejoin:round}
+  .accent{fill:#ea580c;stroke:#ea580c;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+  .label{font-family:Arial,Helvetica,sans-serif;font-size:24px;font-weight:600;letter-spacing:.02em;fill:#0f172a}
+  .small{font-family:Arial,Helvetica,sans-serif;font-size:20px;font-weight:600;letter-spacing:.01em;fill:#0f172a}
+</style>
+<rect class="bg" x="0" y="0" width="1120" height="560"/>
+<path d="M560 40V520" class="ink" opacity=".25"/>
+<!-- trace and measure -->
+<g>
+  <rect x="140" y="64" width="300" height="410" rx="4" class="muted"/>
+  <g transform="translate(200,98)"><path d="M72 328 C46 328 30 308 32 280 C34 250 40 222 36 192 C32 162 20 130 20 100 C20 60 22 26 40 18 C56 12 64 26 64 50 C66 34 70 20 80 20 C90 20 93 34 91 54 C93 40 97 31 104 31 C112 31 114 43 112 62 C115 49 120 43 126 43 C133 43 135 55 132 72 C136 63 140 58 145 60 C151 63 151 76 147 92 C151 122 142 156 132 190 C122 222 114 250 114 280 C114 308 98 328 72 328 Z" class="ink"/></g>
+  <!-- pencil touching outline edge -->
+  <g transform="translate(232,300) rotate(-140)">
+    <path d="M0 0L18 -8L18 8Z" class="solid"/>
+    <path d="M18 -10H138V10H18Z" class="muted"/>
+    <path d="M18 -10L6 -4M18 10L6 4M118 -10V10" class="ink"/>
+  </g>
+  <!-- length -->
+  <path d="M404 116V426M394 116H414M394 426H414M396 128L404 116L412 128M396 414L404 426L412 414" class="ink"/>
+  <text class="small" transform="translate(390,271) rotate(-90)" text-anchor="middle">length</text>
+  <!-- width -->
+  <path d="M220 200H348M220 190V210M348 190V210M232 192L220 200L232 208M336 192L348 200L336 208" class="ink"/>
+  <text class="small" x="284" y="236" text-anchor="middle">width</text>
+  <text class="small" x="290" y="46" text-anchor="middle" opacity=".7">end of day</text>
+  <text class="label" style="font-size:32px" x="280" y="522" text-anchor="middle">trace and measure</text>
+</g>
+<!-- toe box vs foot outline -->
+<g>
+  <g transform="translate(760,104)">
+    <path d="M72 346 C34 346 14 320 16 284 C18 250 24 222 20 192 C16 160 4 128 4 96 C4 46 12 2 50 0 C84 -2 124 12 152 40 C168 58 170 82 166 102 C162 132 156 162 146 196 C136 228 130 254 130 284 C130 320 108 346 72 346 Z" class="accent" style="fill:#fff7ed"/>
+    <path d="M72 328 C46 328 30 308 32 280 C34 250 40 222 36 192 C32 162 20 130 20 100 C20 60 22 26 40 18 C56 12 64 26 64 50 C66 34 70 20 80 20 C90 20 93 34 91 54 C93 40 97 31 104 31 C112 31 114 43 112 62 C115 49 120 43 126 43 C133 43 135 55 132 72 C136 63 140 58 145 60 C151 63 151 76 147 92 C151 122 142 156 132 190 C122 222 114 250 114 280 C114 308 98 328 72 328 Z" class="ink"/>
+  </g>
+  <text class="label" style="font-size:32px" x="840" y="522" text-anchor="middle">toe box vs foot outline</text>
+</g>
+</svg>

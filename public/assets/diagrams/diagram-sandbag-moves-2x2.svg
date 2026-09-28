@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800" role="img" aria-labelledby="title desc">
+  <title id="title">Four sandbag moves: bear-hug, shoulder, clean, squat (2x2)</title><desc id="desc">Anonymous stick figure with a soft capsule-shaped sandbag in four positions: bear-hug carry while walking, bag on one shoulder standing, clean with bag at the lap and hips back, and squat with bag hugged at the chest.</desc>
+  <style>
+  .bg{fill:#fff}
+  .ink{fill:none;stroke:#0f172a;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+  .solid{fill:#0f172a}
+  .muted{fill:#f8fafc;stroke:#0f172a;stroke-width:3;stroke-linejoin:round}
+  .accent{fill:#ea580c;stroke:#ea580c;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+  .label{font-family:Arial,Helvetica,sans-serif;font-size:24px;font-weight:600;letter-spacing:.02em;fill:#0f172a}
+  .small{font-family:Arial,Helvetica,sans-serif;font-size:20px;font-weight:600;letter-spacing:.01em;fill:#0f172a}
+</style>
+<rect class="bg" x="0" y="0" width="800" height="800"/>
+<path d="M400 30V770M30 400H770" class="ink" opacity=".25"/>
+<!-- bear-hug -->
+<g transform="translate(30,40)">
+  <circle cx="152" cy="46" r="22" class="muted"/>
+  <path d="M152 68L150 164" class="ink"/>
+  <rect x="158" y="88" width="82" height="52" rx="26" class="muted" style="fill:#f1f5f9"/><path d="M182 88C186 76 212 76 216 88" class="accent" style="fill:none"/>
+  <path d="M151 88L170 136L230 120M151 92L166 124" class="ink"/>
+  <path d="M150 164L180 208L198 254H220M150 164L132 210L108 252L94 256" class="ink"/>
+  <path d="M60 258H280" class="ink" opacity=".35"/>
+  <text class="label" style="font-size:36px" x="170" y="310" text-anchor="middle">bear-hug</text>
+</g>
+<!-- shoulder -->
+<g transform="translate(430,40)">
+  <circle cx="148" cy="46" r="22" class="muted"/>
+  <path d="M136 84H178" class="ink"/>
+  <rect x="166" y="42" width="92" height="40" rx="20" class="muted" style="fill:#f1f5f9"/><path d="M196 42C200 30 226 30 230 42" class="accent" style="fill:none"/>
+  <path d="M148 68V164M174 86L196 112L212 84M138 86L126 128L126 160" class="ink"/>
+  <path d="M148 164L138 210L134 254H112M148 164L160 210L164 254H188" class="ink"/>
+  <path d="M60 258H280" class="ink" opacity=".35"/>
+  <text class="label" style="font-size:36px" x="170" y="310" text-anchor="middle">shoulder</text>
+</g>
+<!-- clean -->
+<g transform="translate(30,440)">
+  <circle cx="214" cy="80" r="22" class="muted"/>
+  <path d="M118 152L197 99" class="ink"/>
+  <rect x="150" y="146" width="84" height="46" rx="23" class="muted" style="fill:#f1f5f9"/><path d="M176 146C180 134 204 134 208 146" class="accent" style="fill:none"/>
+  <path d="M186 106L196 150L220 166" class="ink"/>
+  <path d="M118 152L176 198L160 254H186" class="ink"/>
+  <path d="M60 258H280" class="ink" opacity=".35"/>
+  <text class="label" style="font-size:36px" x="170" y="310" text-anchor="middle">clean</text>
+</g>
+<!-- squat -->
+<g transform="translate(430,440)">
+  <circle cx="162" cy="82" r="22" class="muted"/>
+  <path d="M122 190L154 104" class="ink"/>
+  <rect x="160" y="112" width="76" height="48" rx="24" class="muted" style="fill:#f1f5f9"/><path d="M182 112C186 100 210 100 214 112" class="accent" style="fill:none"/>
+  <path d="M152 112L170 156L226 144" class="ink"/>
+  <path d="M122 190L196 186L178 254H204" class="ink"/>
+  <path d="M60 258H280" class="ink" opacity=".35"/>
+  <text class="label" style="font-size:36px" x="170" y="310" text-anchor="middle">squat</text>
+</g>
+
+</svg>
