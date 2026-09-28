@@ -11,7 +11,7 @@
 @theme { --color-brand: #ea580c; }
 </style>
 <style>
-:root { --brand:#ea580c; --brand-dark:#c2410c; --slate-50:#f8fafc; --slate-200:#e2e8f0; --slate-500:#64748b; --slate-600:#475569; --slate-800:#1e293b; --slate-900:#0f172a; }
+:root { --brand:#ea580c; --brand-dark:#c2410c; --slate-50:#f8fafc; --slate-200:#e2e8f0; --slate-500:#64748b; --slate-600:#475569; --slate-800:#1e293b; --slate-900:#0f172a; --radius:0.75rem; --brand-soft:#fff7ed; --line:#e2e8f0; }
 * { box-sizing: border-box; }
 body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background:var(--slate-50); color:var(--slate-800); line-height:1.55; min-height:100vh; display:flex; flex-direction:column; }
 a { color:var(--brand); text-decoration:none; }
@@ -75,6 +75,27 @@ tr:last-child td { border-bottom:none; }
 .next-cards a:hover { border-color:var(--brand); text-decoration:none; }
 .next-cards strong { display:block; color:var(--slate-900); font-size:0.95rem; }
 .next-cards span { display:block; margin-top:0.35rem; color:var(--slate-600); font-size:0.88rem; }
+.card-media {
+  aspect-ratio: 16 / 10;
+  border-radius: calc(var(--radius) - 4px);
+  background: var(--brand-soft);
+  margin: -0.15rem -0.15rem 0.75rem;
+  overflow: hidden;
+}
+.card-media img { width:100%; height:100%; object-fit:cover; display:block; }
+.card-media[data-slot^="diagram-"],
+.card-media.diagram {
+  margin-left: 0;
+  margin-right: 0;
+  background: #fff;
+  border: 1px solid var(--line, #e2e8f0);
+}
+.card-media[data-slot="diagram-sit-stand-walk"] { aspect-ratio: 3 / 1; max-width: 720px; }
+.card-media[data-slot="diagram-gel-vs-stretcher"] { aspect-ratio: 2 / 1; max-width: 640px; }
+.card-media[data-slot="diagram-warmup-cues"] { aspect-ratio: 4 / 1; max-width: 640px; }
+.card-media[data-slot="diagram-fit-check"] { aspect-ratio: 2 / 1; max-width: 560px; }
+.card-media[data-slot^="diagram-"] img,
+.card-media.diagram img { object-fit: contain; }
 </style>
 </head>
 <body>
@@ -115,6 +136,7 @@ tr:last-child td { border-bottom:none; }
 
 <div class="cols" aria-label="100 vs 150">
 <section class="panel">
+<div class="card-media" data-slot="thumb-wolf-sandbag-100" data-status="ready"><img src="/images/products/sandbags/product-wolf-sandbag-100.webp" width="800" height="800" alt="WOLF Tactical soft sandbag, 100 lb" loading="lazy" /></div>
 <h2 style="margin:0">~100 lb capacity <span class="tag">Starter size</span></h2>
 <p>Room to train light-to-moderate fills without buying a gym’s worth of plates. Good first bag if you’ll leave headroom empty.</p>
 <ul>
@@ -124,6 +146,7 @@ tr:last-child td { border-bottom:none; }
 <div class="btn-row"><a class="btn" href="/go/wolf-sandbag-100">WOLF ~100 lb on Amazon</a></div>
 </section>
 <section class="panel">
+<div class="card-media" data-slot="thumb-wolf-sandbag-150" data-status="ready"><img src="/images/products/sandbags/product-wolf-sandbag-150.webp" width="800" height="800" alt="WOLF Tactical soft sandbag, 150 lb" loading="lazy" /></div>
 <h2 style="margin:0">~150 lb capacity <span class="tag">More headroom</span></h2>
 <p>Same soft-style idea with more fill room for later. Still start light — capacity is not day-one load.</p>
 <ul>

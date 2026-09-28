@@ -11,7 +11,7 @@
 @theme { --color-brand: #ea580c; }
 </style>
 <style>
-:root { --brand:#ea580c; --brand-dark:#c2410c; --slate-50:#f8fafc; --slate-200:#e2e8f0; --slate-500:#64748b; --slate-600:#475569; --slate-800:#1e293b; --slate-900:#0f172a; }
+:root { --brand:#ea580c; --brand-dark:#c2410c; --slate-50:#f8fafc; --slate-200:#e2e8f0; --slate-500:#64748b; --slate-600:#475569; --slate-800:#1e293b; --slate-900:#0f172a; --radius:0.75rem; --brand-soft:#fff7ed; --line:#e2e8f0; }
 * { box-sizing: border-box; }
 body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background:var(--slate-50); color:var(--slate-800); line-height:1.55; min-height:100vh; display:flex; flex-direction:column; }
 a { color:var(--brand); text-decoration:none; }
@@ -50,6 +50,27 @@ h2 { color:var(--slate-900); font-size:1.25rem; margin:2rem 0 0.75rem; }
 .card p { margin:0.45rem 0 0; color:var(--slate-600); font-size:0.95rem; }
 .flag { background:#fff; border:1px dashed #fdba74; border-radius:0.75rem; padding:0.85rem 1rem; margin:1.25rem 0; font-size:0.9rem; color:var(--slate-600); }
 .tag-known { display:inline-block; font-size:0.7rem; font-weight:600; letter-spacing:0.03em; text-transform:uppercase; padding:0.15rem 0.45rem; border-radius:999px; background:#ecfdf5; color:#047857; margin-left:0.25rem; }
+.card-media {
+  aspect-ratio: 16 / 10;
+  border-radius: calc(var(--radius) - 4px);
+  background: var(--brand-soft);
+  margin: -0.15rem -0.15rem 0.75rem;
+  overflow: hidden;
+}
+.card-media img { width:100%; height:100%; object-fit:cover; display:block; }
+.card-media[data-slot^="diagram-"],
+.card-media.diagram {
+  margin-left: 0;
+  margin-right: 0;
+  background: #fff;
+  border: 1px solid var(--line, #e2e8f0);
+}
+.card-media[data-slot="diagram-sit-stand-walk"] { aspect-ratio: 3 / 1; max-width: 720px; }
+.card-media[data-slot="diagram-gel-vs-stretcher"] { aspect-ratio: 2 / 1; max-width: 640px; }
+.card-media[data-slot="diagram-warmup-cues"] { aspect-ratio: 4 / 1; max-width: 640px; }
+.card-media[data-slot="diagram-fit-check"] { aspect-ratio: 2 / 1; max-width: 560px; }
+.card-media[data-slot^="diagram-"] img,
+.card-media.diagram img { object-fit: contain; }
 </style>
 </head>
 <body>
@@ -74,6 +95,7 @@ h2 { color:var(--slate-900); font-size:1.25rem; margin:2rem 0 0.75rem; }
 </div>
 
 <div class="card">
+<div class="card-media" data-slot="thumb-asitvo" data-status="ready"><img src="/images/products/product-asitvo-barefoot.webp" width="800" height="800" alt="ASITVO minimalist barefoot cross-trainer sneaker" loading="lazy" /></div>
 <h3>1. Budget first pair</h3>
 <p>ASITVO or WHITIN — wide / zero-drop marketplace trainers to test the geometry without spending mid-tier money.</p>
 <div class="btn-row">
@@ -82,6 +104,7 @@ h2 { color:var(--slate-900); font-size:1.25rem; margin:2rem 0 0.75rem; }
 </div>
 </div>
 <div class="card">
+<div class="card-media" data-slot="thumb-xero-prio" data-status="ready"><img src="/images/products/product-xero-prio.webp" width="800" height="800" alt="Xero Shoes Prio barefoot training shoe" loading="lazy" /></div>
 <h3>2. Known-brand everyday trainer</h3>
 <p>Xero Prio if you want a recognizable barefoot brand for daily walking / light training.</p>
 <div class="btn-row">
@@ -89,6 +112,7 @@ h2 { color:var(--slate-900); font-size:1.25rem; margin:2rem 0 0.75rem; }
 </div>
 </div>
 <div class="card">
+<div class="card-media" data-slot="thumb-vivo-motus" data-status="ready"><img src="/images/products/product-vivobarefoot-motus.webp" width="800" height="800" alt="Vivobarefoot Motus Strength zero-drop training shoe" loading="lazy" /></div>
 <h3>3. Optional gym add-on later</h3>
 <p>Vivobarefoot Motus or Xero XT Max after the first pair is dialed — not required on day one.</p>
 <div class="btn-row">
@@ -97,6 +121,7 @@ h2 { color:var(--slate-900); font-size:1.25rem; margin:2rem 0 0.75rem; }
 </div>
 </div>
 <div class="card">
+<div class="card-media" data-slot="thumb-vibram-fivefingers" data-status="ready"><img src="/images/products/shoes/product-vibram-fivefingers.webp" width="800" height="800" alt="Vibram FiveFingers V-Run five-toe shoe, side view" loading="lazy" /></div>
 <h3>Not a first-pair pick: 5-toe niche</h3>
 <p>Vibram FiveFingers is a known 5-toe brand (Born to Run cultural OG). Interesting if you want that shape — not what we recommend as a beginner first pair.</p>
 <div class="btn-row">
