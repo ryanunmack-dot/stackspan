@@ -17,7 +17,7 @@
 @theme { --color-brand: #ea580c; }
 </style>
 <style>
-:root { --brand:#ea580c; --brand-dark:#c2410c; --slate-50:#f8fafc; --slate-200:#e2e8f0; --slate-500:#64748b; --slate-600:#475569; --slate-800:#1e293b; --slate-900:#0f172a; }
+:root { --brand:#ea580c; --brand-dark:#c2410c; --slate-50:#f8fafc; --slate-200:#e2e8f0; --slate-500:#64748b; --slate-600:#475569; --slate-800:#1e293b; --slate-900:#0f172a; --radius: 0.75rem; --brand-soft: #fff7ed; }
 * { box-sizing: border-box; }
 body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background:var(--slate-50); color:var(--slate-800); line-height:1.55; min-height:100vh; display:flex; flex-direction:column; }
 a { color:var(--brand); text-decoration:none; }
@@ -61,6 +61,14 @@ h2 { color:var(--slate-900); }
 .footer-inner { padding:2rem 0; font-size:0.875rem; color:var(--slate-500); }
 .footer-inner .name { font-weight:600; color:#334155; margin:0; }
 .muted { color:var(--slate-500); font-size:0.85rem; }
+.card-media {
+  aspect-ratio: 16 / 10;
+  border-radius: calc(var(--radius) - 4px);
+  background: var(--brand-soft);
+  margin: -0.15rem -0.15rem 0.75rem;
+  overflow: hidden;
+}
+.card-media img { width:100%; height:100%; object-fit:cover; display:block; }
 </style>
 </head>
 <body>
@@ -81,6 +89,14 @@ h2 { color:var(--slate-900); }
 <p class="lede">Everyday practices that keep feet happier: smarter footwear, recovery tools, and a few rollers and massagers worth knowing about. Not medical advice.</p>
 <div class="start">
 <strong>Start here:</strong> Desk days go better with a sit/stand/walk rhythm — habits first, then optional converters and pads. <a href="/foot-care/standing-desk-feet/">Standing desk feet kit</a>.
+</div>
+<div class="card-media" data-slot="hub-lead-foot-care" style="max-width:720px">
+<img src="/images/lifestyle/hubs/hub-foot-care-barefoot-stream-rock.webp"
+     srcset="/images/lifestyle/hubs/hub-foot-care-barefoot-stream-rock-400.webp 400w, /images/lifestyle/hubs/hub-foot-care-barefoot-stream-rock-800.webp 800w, /images/lifestyle/hubs/hub-foot-care-barefoot-stream-rock-1200.webp 1200w, /images/lifestyle/hubs/hub-foot-care-barefoot-stream-rock.webp 1600w"
+     sizes="(max-width:747px) calc(100vw - 1.7rem), 720px"
+     width="1600" height="1000"
+     alt="Bare feet balanced on a rounded stone in a shallow forest stream"
+     loading="lazy" decoding="async">
 </div>
 
 <ul class="list">

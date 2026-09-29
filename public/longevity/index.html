@@ -18,7 +18,7 @@
 @theme { --color-brand: #ea580c; }
 </style>
 <style>
-:root { --brand:#ea580c; --brand-dark:#c2410c; --slate-50:#f8fafc; --slate-200:#e2e8f0; --slate-500:#64748b; --slate-600:#475569; --slate-800:#1e293b; --slate-900:#0f172a; }
+:root { --brand:#ea580c; --brand-dark:#c2410c; --slate-50:#f8fafc; --slate-200:#e2e8f0; --slate-500:#64748b; --slate-600:#475569; --slate-800:#1e293b; --slate-900:#0f172a; --radius: 0.75rem; --brand-soft: #fff7ed; }
 * { box-sizing: border-box; }
 body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background:var(--slate-50); color:var(--slate-800); line-height:1.55; min-height:100vh; display:flex; flex-direction:column; }
 a { color:var(--brand); text-decoration:none; }
@@ -49,6 +49,14 @@ h1 { font-size:clamp(1.75rem, 4vw, 2.75rem); line-height:1.15; color:var(--slate
 .muted { color:var(--slate-500); font-size:0.85rem; }
 .disclosure { background:#fff; border-bottom:1px solid var(--slate-200); font-size:0.8rem; color:var(--slate-500); padding:0.55rem 0; }
 .grid { display:grid; gap:1rem; margin-top:0.5rem; }
+.card-media {
+  aspect-ratio: 16 / 10;
+  border-radius: calc(var(--radius) - 4px);
+  background: var(--brand-soft);
+  margin: -0.15rem -0.15rem 0.75rem;
+  overflow: hidden;
+}
+.card-media img { width:100%; height:100%; object-fit:cover; display:block; }
 </style>
 </head>
 <body>
@@ -70,6 +78,14 @@ h1 { font-size:clamp(1.75rem, 4vw, 2.75rem); line-height:1.15; color:var(--slate
 <p class="lede">Longevity here is a desk-bound skeptic’s reading list, not a promise. The old physical-culture crowd kept to plain basics for decades: sleep, real food, daily movement, play, and picking up new skills. These pages collect what they did and how to try the unglamorous parts at home, framed as history and habit rather than outcomes. Not medical advice.</p>
 <div class="start">
 <strong>Start here:</strong> Read the physical culture elders first, then pick one habit to try. Everything on this hub is history, habit, and gear notes: no anti-aging claims, lifespan promises, or clinical protocols.
+</div>
+<div class="card-media" data-slot="hub-lead-longevity" style="max-width:720px">
+<img src="/images/lifestyle/hubs/hub-longevity-country-path-walk.webp"
+     srcset="/images/lifestyle/hubs/hub-longevity-country-path-walk-400.webp 400w, /images/lifestyle/hubs/hub-longevity-country-path-walk-800.webp 800w, /images/lifestyle/hubs/hub-longevity-country-path-walk-1200.webp 1200w, /images/lifestyle/hubs/hub-longevity-country-path-walk.webp 1600w"
+     sizes="(max-width:747px) calc(100vw - 1.7rem), 720px"
+     width="1600" height="1000"
+     alt="An older woman seen from behind walking a dirt country path beside a stone wall toward the sea, holding a small bunch of flowers"
+     loading="lazy" decoding="async">
 </div>
 <div class="grid">
 <a class="card" href="/natural-fitness/physical-culture-elders/">
