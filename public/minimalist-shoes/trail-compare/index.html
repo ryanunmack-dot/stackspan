@@ -23,7 +23,7 @@ a:hover { text-decoration:underline; }
 .header-inner { display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:1rem 0; }
 .logo { font-weight:700; font-size:1.125rem; color:var(--slate-900); text-decoration:none; }
 .logo span { color:var(--brand); }
-.nav { display:flex; gap:1rem; font-size:0.875rem; font-weight:500; }
+.nav { display:flex; flex-wrap:wrap; gap:0.75rem 1rem; font-size:0.875rem; font-weight:500; }
 .nav a { color:var(--slate-600); text-decoration:none; }
 .nav a:hover { color:var(--brand); }
 main { flex:1; padding:2.5rem 0; }
@@ -96,6 +96,7 @@ tr:last-child td { border-bottom:none; }
 .card-media[data-slot^="diagram-"] img,
 .card-media.diagram img { object-fit: contain; }
 .table-thumb{width:56px;height:56px;object-fit:contain;border-radius:8px;background:#fff;vertical-align:middle}
+.card-media[data-slot^="thumb-"] img{object-fit:contain}
 </style>
 </head>
 <body>
@@ -119,7 +120,7 @@ tr:last-child td { border-bottom:none; }
 <strong>Start here:</strong> Buy for the surface. Trail needs grip and a more aggressive outsole; gym/garage/daily wants a flexible, low-stack sole for flat floors. Wide toe box and zero/low drop still matter in both columns — don’t treat trail lugs as a garage shoe, or a smooth trainer as a rocky-path shoe.
 </div>
 <div class="prose">
-<p>We only link /go routes that already exist — no invented ASINs. Check outsole photos and drop on the product page before you buy.</p>
+<p>Only /go routes that already exist are linked — no invented ASINs. Check outsole photos and drop on the product page before you buy.</p>
 </div>
 
 <div class="cols" aria-label="Trail vs gym-garage columns">
@@ -203,7 +204,7 @@ tr:last-child td { border-bottom:none; }
 <tbody>
 <tr>
 <td class="col">Trail</td>
-<td class="pick"><img class="table-thumb" src="/images/products/shoes/product-xero-z-trail-ev.webp" width="56" height="56" loading="lazy" alt="Xero Z-Trail EV" /> Xero Z-Trail EV <span class="tag tag-known">Known</span></td>
+<td class="pick"><img class="table-thumb" src="/images/products/shoes/product-xero-z-trail-ev-112.webp" srcset="/images/products/shoes/product-xero-z-trail-ev-112.webp 2x, /images/products/shoes/product-xero-z-trail-ev-168.webp 3x" width="56" height="56" loading="lazy" alt="Xero Z-Trail EV" /> Xero Z-Trail EV <span class="tag tag-known">Known</span></td>
 <td>Light hiking sandal for easy trails and wet days</td>
 <td>Open sandal; wide toe box; zero-drop; 11 mm lugged sole</td>
 <td>
@@ -216,7 +217,7 @@ tr:last-child td { border-bottom:none; }
 </tr>
 <tr>
 <td class="col">Trail</td>
-<td class="pick"><img class="table-thumb" src="/images/products/product-xero-xt-max.webp" width="56" height="56" loading="lazy" alt="Xero XT Max" /> Xero XT Max <span class="tag tag-known">Known</span></td>
+<td class="pick"><img class="table-thumb" src="/images/products/product-xero-xt-max-112.webp" srcset="/images/products/product-xero-xt-max-112.webp 2x, /images/products/product-xero-xt-max-168.webp 3x" width="56" height="56" loading="lazy" alt="Xero XT Max" /> Xero XT Max <span class="tag tag-known">Known</span></td>
 <td>More cushion on trail-adjacent days</td>
 <td>Roomy forefoot; zero-drop; thicker stack</td>
 <td>
@@ -227,7 +228,7 @@ tr:last-child td { border-bottom:none; }
 </tr>
 <tr>
 <td class="col">Trail</td>
-<td class="pick"><img class="table-thumb" src="/images/products/shoes/product-altra-lone-peak-9.webp" width="56" height="56" loading="lazy" alt="Altra Lone Peak 9" /> Altra Lone Peak 9 <span class="tag tag-known">Known</span></td>
+<td class="pick"><img class="table-thumb" src="/images/products/shoes/product-altra-lone-peak-9-112.webp" srcset="/images/products/shoes/product-altra-lone-peak-9-112.webp 2x, /images/products/shoes/product-altra-lone-peak-9-168.webp 3x" width="56" height="56" loading="lazy" alt="Altra Lone Peak 9" /> Altra Lone Peak 9 <span class="tag tag-known">Known</span></td>
 <td>Trail / hiking with more foam</td>
 <td>FootShape toe box; zero-drop; higher stack</td>
 <td>
@@ -238,7 +239,7 @@ tr:last-child td { border-bottom:none; }
 </tr>
 <tr>
 <td class="col">Trail</td>
-<td class="pick"><img class="table-thumb" src="/images/products/shoes/product-hike-canyon.webp" width="56" height="56" loading="lazy" alt="Hike Canyon" /> Hike Canyon <span class="tag">Marketplace</span></td>
+<td class="pick"><img class="table-thumb" src="/images/products/shoes/product-hike-canyon-112.webp" srcset="/images/products/shoes/product-hike-canyon-112.webp 2x, /images/products/shoes/product-hike-canyon-168.webp 3x" width="56" height="56" loading="lazy" alt="Hike Canyon" /> Hike Canyon <span class="tag">Marketplace</span></td>
 <td>Budget trail try-on</td>
 <td>Trail-style outsole — confirm drop &amp; width on listing</td>
 <td>
@@ -249,7 +250,7 @@ tr:last-child td { border-bottom:none; }
 </tr>
 <tr>
 <td class="col">Gym / garage</td>
-<td class="pick"><img class="table-thumb" src="/images/products/product-xero-prio.webp" width="56" height="56" loading="lazy" alt="Xero Prio" /> Xero Prio <span class="tag tag-known">Known</span></td>
+<td class="pick"><img class="table-thumb" src="/images/products/product-xero-prio-112.webp" srcset="/images/products/product-xero-prio-112.webp 2x, /images/products/product-xero-prio-168.webp 3x" width="56" height="56" loading="lazy" alt="Xero Prio" /> Xero Prio <span class="tag tag-known">Known</span></td>
 <td>Everyday / garage trainer when sizing matters</td>
 <td>Foot-shaped splay; zero-drop; thin flexible sole</td>
 <td>
@@ -262,7 +263,7 @@ tr:last-child td { border-bottom:none; }
 </tr>
 <tr>
 <td class="col">Gym / garage</td>
-<td class="pick"><img class="table-thumb" src="/images/products/product-asitvo-barefoot.webp" width="56" height="56" loading="lazy" alt="ASITVO barefoot" /> ASITVO barefoot <span class="tag">Marketplace</span></td>
+<td class="pick"><img class="table-thumb" src="/images/products/product-asitvo-barefoot-112.webp" srcset="/images/products/product-asitvo-barefoot-112.webp 2x, /images/products/product-asitvo-barefoot-168.webp 3x" width="56" height="56" loading="lazy" alt="ASITVO barefoot" /> ASITVO barefoot <span class="tag">Marketplace</span></td>
 <td>Budget gym / daily try-on</td>
 <td>Roomy splay; typically zero-drop; flexible trainer sole</td>
 <td>
@@ -273,7 +274,7 @@ tr:last-child td { border-bottom:none; }
 </tr>
 <tr>
 <td class="col">Gym / garage</td>
-<td class="pick"><img class="table-thumb" src="/images/products/product-whitin-barefoot.webp" width="56" height="56" loading="lazy" alt="WHITIN barefoot" /> WHITIN barefoot <span class="tag">Marketplace</span></td>
+<td class="pick"><img class="table-thumb" src="/images/products/product-whitin-barefoot-112.webp" srcset="/images/products/product-whitin-barefoot-112.webp 2x, /images/products/product-whitin-barefoot-168.webp 3x" width="56" height="56" loading="lazy" alt="WHITIN barefoot" /> WHITIN barefoot <span class="tag">Marketplace</span></td>
 <td>Mid-budget daily wear</td>
 <td>Wide sneaker shape; zero-drop style flex</td>
 <td>

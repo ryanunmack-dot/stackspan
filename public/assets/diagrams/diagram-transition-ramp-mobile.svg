@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1000" viewBox="0 0 720 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Easing into new shoes week by week</title><desc id="desc">Four ascending steps along a weekly timeline showing time in new shoes rising gradually: short indoor, short walks, longer walks, most of the day, with a note to keep a backup pair.</desc>
+  <style>
+  .bg{fill:#fff}
+  .ink{fill:none;stroke:#0f172a;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+  .solid{fill:#0f172a}
+  .muted{fill:#f8fafc;stroke:#0f172a;stroke-width:3;stroke-linejoin:round}
+  .accent{fill:#ea580c;stroke:#ea580c;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+  .label{font-family:Arial,Helvetica,sans-serif;font-size:38px;font-weight:600;letter-spacing:.02em;fill:#0f172a}
+  .small{font-family:Arial,Helvetica,sans-serif;font-size:32px;font-weight:600;letter-spacing:.01em;fill:#0f172a}
+</style>
+<rect class="bg" x="0" y="0" width="720" height="1000"/>
+<text class="small" x="56" y="64">time in shoes</text>
+<path d="M40 90H680M668 82L680 90L668 98" class="ink"/>
+<text class="label" x="56" y="164">week 1</text>
+<text class="small" x="56" y="206">short indoor</text>
+<path d="M40 236H236V290H40" class="muted" style="fill:#f1f5f9"/>
+<text class="label" x="56" y="354">week 2</text>
+<text class="small" x="56" y="396">short walks</text>
+<path d="M40 426H376V480H40" class="muted" style="fill:#f1f5f9"/>
+<text class="label" x="56" y="544">week 3</text>
+<text class="small" x="56" y="586">longer walks</text>
+<path d="M40 616H516V670H40" class="muted" style="fill:#f1f5f9"/>
+<text class="label" x="56" y="734">week 4+</text>
+<text class="small" x="56" y="776">most of the day</text>
+<path d="M40 806H666V860H40" class="muted" style="fill:#f1f5f9"/>
+<path d="M40 226H248V304H388V494H528V684H678V870" class="accent" style="fill:none;stroke-width:4"/>
+<path d="M40 104V876" class="ink"/>
+<path d="M40 904H680" class="ink" opacity=".25"/>
+<g transform="translate(56,926)">
+  <path d="M0 40V14C0 8 6 4 12 7L28 16C40 21 56 24 66 29C73 32 76 37 76 42H0Z" class="muted"/>
+  <path d="M0 42H76" class="ink"/>
+  <text class="small" x="96" y="38">keep a backup pair</text>
+</g>
+</svg>
