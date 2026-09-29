@@ -17,7 +17,7 @@
 @theme { --color-brand: #ea580c; }
 </style>
 <style>
-:root { --brand:#ea580c; --brand-dark:#c2410c; --slate-50:#f8fafc; --slate-200:#e2e8f0; --slate-500:#64748b; --slate-600:#475569; --slate-800:#1e293b; --slate-900:#0f172a; }
+:root { --brand:#ea580c; --brand-dark:#c2410c; --slate-50:#f8fafc; --slate-200:#e2e8f0; --slate-500:#64748b; --slate-600:#475569; --slate-800:#1e293b; --slate-900:#0f172a; --radius: 0.75rem; --brand-soft: #fff7ed; }
 * { box-sizing: border-box; }
 body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background:var(--slate-50); color:var(--slate-800); line-height:1.55; min-height:100vh; display:flex; flex-direction:column; }
 a { color:var(--brand); text-decoration:none; }
@@ -59,6 +59,14 @@ h2 { color:var(--slate-900); }
 .guide-card h3 { margin:0; font-size:1.05rem; color:var(--slate-900); }
 .guide-card p { margin:0.4rem 0 0; font-size:0.9rem; color:var(--slate-600); }
 .section-label { font-size:0.8rem; font-weight:600; letter-spacing:0.04em; text-transform:uppercase; color:var(--slate-500); margin:1.75rem 0 0; }
+.card-media {
+  aspect-ratio: 16 / 10;
+  border-radius: calc(var(--radius) - 4px);
+  background: var(--brand-soft);
+  margin: -0.15rem -0.15rem 0.75rem;
+  overflow: hidden;
+}
+.card-media img { width:100%; height:100%; object-fit:cover; display:block; }
 </style>
 </head>
 <body>
@@ -79,6 +87,14 @@ h2 { color:var(--slate-900); }
 <h1>Minimalist &amp; wide shoes worth trying</h1>
 <div class="start">
 <strong>Start here:</strong> One wider pair for short sessions. Then pick by budget, or by how you actually spend the day. Go slow on concrete. Not medical advice.
+</div>
+<div class="card-media" data-slot="hub-lead-minimalist-shoes" style="max-width:720px">
+<img src="/images/lifestyle/hubs/hub-minimalist-shoes-sandals-forest-floor.webp"
+     srcset="/images/lifestyle/hubs/hub-minimalist-shoes-sandals-forest-floor-400.webp 400w, /images/lifestyle/hubs/hub-minimalist-shoes-sandals-forest-floor-800.webp 800w, /images/lifestyle/hubs/hub-minimalist-shoes-sandals-forest-floor-1200.webp 1200w, /images/lifestyle/hubs/hub-minimalist-shoes-sandals-forest-floor.webp 1600w"
+     sizes="(max-width:747px) calc(100vw - 1.7rem), 720px"
+     width="1600" height="1000"
+     alt="Feet in thin black strap sandals standing on a forest floor of dry leaves and twigs"
+     loading="lazy" decoding="async">
 </div>
 <div class="prose">
 <p>“Minimalist” and “wide” here means a roomy toe box, a bendy sole, and less foam between you and the ground. Not a fashion pitch. Not a clinic. The shortlist only includes what is actually linked — try the geometry before you fill a closet.</p>
