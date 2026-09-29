@@ -123,3 +123,11 @@ License basis for every pass-2 file:
 | /bunions/, /bunions/wide-vs-fashion/ | All product CTAs | UX rule: images go only in existing `.card-media` slots, and these CTAs are bare `.btn`/`.btn-secondary`, so they stay text only. Assets exist if UX later approves a slot. |
 
 No Amazon fetch failed in the end. Twelve ASINs first hit Amazon's bot interstitial and succeeded on a retry with a different browser User-Agent and cookies.
+
+## Pass 3 (2026-09-28 PT): size re-export
+
+- 60 KB budget re-encode (cwebp `-m 6 -sharp_yuv -metadata none`), made from the same Amazon source images listed in `MANIFEST.csv` (re-fetched from m.media-amazon.com by image ID, with listing galleries checked by ASIN). No new image IDs were introduced.
+- `product-xero-prio.webp`, `product-asitvo-barefoot.webp`, `product-whitin-barefoot.webp`, `product-xero-xt-max.webp`: same Amazon MAIN gallery image for the same ASIN, now uncropped (contain + white pad) so the whole shoe shows.
+- `product-hike-canyon.webp`: same image `81Bv4Qx7OjL`, with the swatch strip cropped off.
+- `product-walking-pad.webp`: same image `81X0xiDjJXL`. The overlaid "8%" incline graphic text was retouched out (inpainted), which is the one edit beyond trim, pad and resize. The product itself was not altered.
+- New `-112` / `-168` table-thumb derivatives are downscales of the same Amazon images, under the same license basis and ASIN as their masters.

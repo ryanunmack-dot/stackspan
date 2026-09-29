@@ -11,7 +11,7 @@
 @theme { --color-brand: #ea580c; }
 </style>
 <style>
-:root { --brand:#ea580c; --brand-dark:#c2410c; --slate-50:#f8fafc; --slate-200:#e2e8f0; --slate-500:#64748b; --slate-600:#475569; --slate-800:#1e293b; --slate-900:#0f172a; }
+:root { --brand:#ea580c; --brand-dark:#c2410c; --slate-50:#f8fafc; --slate-200:#e2e8f0; --slate-500:#64748b; --slate-600:#475569; --slate-800:#1e293b; --slate-900:#0f172a; --radius:0.75rem; --brand-soft:#fff7ed; --line:#e2e8f0; }
 * { box-sizing: border-box; }
 body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background:var(--slate-50); color:var(--slate-800); line-height:1.55; min-height:100vh; display:flex; flex-direction:column; }
 a { color:var(--brand); text-decoration:none; }
@@ -23,7 +23,7 @@ a:hover { text-decoration:underline; }
 .header-inner { display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:1rem 0; }
 .logo { font-weight:700; font-size:1.125rem; color:var(--slate-900); text-decoration:none; }
 .logo span { color:var(--brand); }
-.nav { display:flex; gap:1rem; font-size:0.875rem; font-weight:500; }
+.nav { display:flex; flex-wrap:wrap; gap:0.75rem 1rem; font-size:0.875rem; font-weight:500; }
 .nav a { color:var(--slate-600); text-decoration:none; }
 .nav a:hover { color:var(--brand); }
 main { flex:1; padding:2.5rem 0; }
@@ -51,6 +51,35 @@ h2 { color:var(--slate-900); font-size:1.25rem; margin:2rem 0 0.75rem; }
 .step p { margin:0.45rem 0 0; color:var(--slate-600); font-size:0.95rem; }
 .flag { background:#fff; border:1px dashed #fdba74; border-radius:0.75rem; padding:0.85rem 1rem; margin:1.25rem 0; font-size:0.9rem; color:var(--slate-600); }
 .tag-known { display:inline-block; font-size:0.7rem; font-weight:600; letter-spacing:0.03em; text-transform:uppercase; padding:0.15rem 0.45rem; border-radius:999px; background:#ecfdf5; color:#047857; margin-left:0.25rem; }
+.card-media {
+  aspect-ratio: 16 / 10;
+  border-radius: calc(var(--radius) - 4px);
+  background: var(--brand-soft);
+  margin: -0.15rem -0.15rem 0.75rem;
+  overflow: hidden;
+}
+.card-media img { width:100%; height:100%; object-fit:cover; display:block; }
+.card-media[data-slot^="diagram-"],
+.card-media.diagram {
+  margin-left: 0;
+  margin-right: 0;
+  background: #fff;
+  border: 1px solid var(--line, #e2e8f0);
+}
+.card-media[data-slot="diagram-sit-stand-walk"] { aspect-ratio: 3 / 1; max-width: 720px; }
+.card-media[data-slot="diagram-gel-vs-stretcher"] { aspect-ratio: 2 / 1; max-width: 640px; }
+.card-media[data-slot="diagram-warmup-cues"] { aspect-ratio: 4 / 1; max-width: 640px; }
+.card-media[data-slot="diagram-fit-check"] { aspect-ratio: 2 / 1; max-width: 560px; }
+.card-media[data-slot^="diagram-"] img,
+.card-media.diagram img { object-fit: contain; }
+.diagram-caption { margin: 0.35rem 0 1rem; font-size: 0.88rem; color: var(--body, #475569); max-width: 40rem; }
+.card-media.diagram picture{display:contents}
+.card-media[data-slot="diagram-toe-box-shape"],.card-media[data-slot="diagram-foot-trace"]{aspect-ratio:2/1;max-width:640px}
+.card-media[data-slot="diagram-foot-shapes"],.card-media[data-slot="diagram-transition-ramp"]{aspect-ratio:3/1;max-width:720px}
+.card-media[data-slot="diagram-sandbag-moves"]{aspect-ratio:4/1;max-width:720px}
+@media (max-width:480px){.card-media[data-slot="diagram-sandbag-moves"]{aspect-ratio:1/1;max-width:360px}}
+.card-media.diagram img{max-width:720px;width:100%;height:auto;margin-inline:auto;display:block}
+@media (max-width:480px){.card-media[data-slot="diagram-transition-ramp"]{aspect-ratio:720/1000;max-width:360px}}
 </style>
 </head>
 <body>
@@ -75,7 +104,12 @@ h2 { color:var(--slate-900); font-size:1.25rem; margin:2rem 0 0.75rem; }
 </div>
 
 <div class="card-media diagram" data-slot="diagram-transition-ramp" data-status="ready">
-<img src="/assets/diagrams/diagram-transition-ramp.svg" width="1080" height="360" alt="Step chart: time in the new shoes rising from short indoor sessions in week 1 to most of the day by week 4 and later, with a note to keep a backup pair." loading="lazy" />
+<picture>
+  <source media="(max-width: 480px)" srcset="/assets/diagrams/diagram-transition-ramp-mobile.svg" width="720" height="1000">
+  <img src="/assets/diagrams/diagram-transition-ramp.svg" width="1080" height="360"
+       alt="Easing into new shoes week by week: time in new shoes rises from short indoor wear in week 1, to short walks, longer walks, and most of the day by week 4+; keep a backup pair."
+       loading="lazy">
+</picture>
 </div>
 <p class="diagram-caption muted">Ramp up slowly and let your feet set the pace.</p>
 <div class="prose">
@@ -118,16 +152,13 @@ h2 { color:var(--slate-900); font-size:1.25rem; margin:2rem 0 0.75rem; }
 <a class="btn btn-secondary" href="/go/vivobarefoot">Vivo Motus <span class="tag-known">Known</span></a>
 </div>
 
-<div class="flag">
-<strong>Human review flag:</strong> Progression timing (“when short blocks feel boring”) is editorial judgment, not a clinical protocol (~75% confidence). Spot-check before you treat it as gospel.
-</div>
 
 <div class="btn-row" style="margin-top:1.5rem">
 <a class="btn" href="/minimalist-shoes/by-use/">By use case</a>
 <a class="btn btn-secondary" href="/minimalist-shoes/compare/">By price</a>
 <a class="btn btn-secondary" href="/foot-care/">Foot care</a>
 </div>
-<p class="muted" style="margin-top:1rem">Affiliate links. You pay the same retail price; we may get a commission.</p>
+<p class="muted" style="margin-top:1rem">Affiliate links. You pay the same retail price; StackSpan may earn a commission.</p>
 </div></main>
 <footer class="site-footer"><div class="wrap footer-inner">
 <p class="name">StackSpan</p>

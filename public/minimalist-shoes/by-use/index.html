@@ -23,7 +23,7 @@ a:hover { text-decoration:underline; }
 .header-inner { display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:1rem 0; }
 .logo { font-weight:700; font-size:1.125rem; color:var(--slate-900); text-decoration:none; }
 .logo span { color:var(--brand); }
-.nav { display:flex; gap:1rem; font-size:0.875rem; font-weight:500; }
+.nav { display:flex; flex-wrap:wrap; gap:0.75rem 1rem; font-size:0.875rem; font-weight:500; }
 .nav a { color:var(--slate-600); text-decoration:none; }
 .nav a:hover { color:var(--brand); }
 main { flex:1; padding:2.5rem 0; }
@@ -70,6 +70,8 @@ h2 { color:var(--slate-900); font-size:1.2rem; margin:0; }
 .card-media[data-slot="diagram-fit-check"] { aspect-ratio: 2 / 1; max-width: 560px; }
 .card-media[data-slot^="diagram-"] img,
 .card-media.diagram img { object-fit: contain; }
+.card-media[data-slot^="thumb-"] img{object-fit:contain}
+@media (min-width:481px){.card-media[data-slot^="thumb-"]{max-width:360px}}
 </style>
 </head>
 <body>
@@ -88,7 +90,7 @@ h2 { color:var(--slate-900); font-size:1.2rem; margin:0; }
 <p class="crumb"><a href="/">Home</a> / <a href="/minimalist-shoes/">Minimalist shoes</a> / By use case</p>
 <p class="eyebrow">Job / use shortlist · starting points</p>
 <h1>Barefoot shoes by use case</h1>
-<p class="lede">Match the shoe to the day you actually live — desk, gym, trail, casual, wet — using the links we already redirect.</p>
+<p class="lede">Match the shoe to the day you actually live — desk, gym, trail, casual, wet — using the links already set up here.</p>
 <div class="start">
 <strong>Start here:</strong> Wide toe box and flexible soles matter more than brand mythology. Pick for the job first, then decide budget marketplace vs known brand. This is not medical advice and not a workplace PPE guide.
 </div>
@@ -132,7 +134,7 @@ h2 { color:var(--slate-900); font-size:1.2rem; margin:0; }
 <section class="use" id="trail">
 <div class="card-media" data-slot="thumb-altra-lone-peak-9" data-status="ready"><img src="/images/products/shoes/product-altra-lone-peak-9.webp" width="800" height="800" alt="Altra Lone Peak 9 trail running shoe, side view" loading="lazy" /></div>
 <h2>Trail / hiking</h2>
-<p>Altra Lone Peak is the recognizable zero-drop trail name in our set (more stack than ultra-minimal). Hike Canyon and Peluva Strand are alternatives — Peluva is a 5-toe niche. The Vibram FiveFingers link is the V-Run, a 5-toe road-running shoe for pavement and treadmill, not a trail shoe. It sits here only for 5-toe fans; niche fit.</p>
+<p>Altra Lone Peak is the recognizable zero-drop trail name in this set (more stack than ultra-minimal). Hike Canyon and Peluva Strand are alternatives — Peluva is a 5-toe niche. The Vibram FiveFingers link is the V-Run, a 5-toe road-running shoe for pavement and treadmill, not a trail shoe. It sits here only for 5-toe fans; niche fit.</p>
 <div class="btn-row">
 <a class="btn" href="/go/altra-lone-peak-9">Altra Lone Peak 9 <span class="tag tag-known">Known</span></a>
 <a class="btn btn-secondary" href="/go/hike-canyon">Hike Canyon</a>
@@ -154,7 +156,7 @@ h2 { color:var(--slate-900); font-size:1.2rem; margin:0; }
 <section class="use" id="water">
 <div class="card-media" data-slot="thumb-xero-z-trail-ev" data-status="ready"><img src="/images/products/shoes/product-xero-z-trail-ev.webp" width="800" height="800" alt="Xero Shoes Z-Trail EV hiking sandal, side view" loading="lazy" /></div>
 <h2>Water / beach / wet days</h2>
-<p>Sport sandal or sock-style water shoe — not your daily trainer. Xero Z-Trail EV is the known sport sandal in our set; BULLIANT is the cheap sock / slipper option.</p>
+<p>Sport sandal or sock-style water shoe — not your daily trainer. Xero Z-Trail EV is the known sport sandal in this set; BULLIANT is the cheap sock / slipper option.</p>
 <div class="btn-row">
 <a class="btn" href="/go/xero-z-trail-ev">Xero Z-Trail EV <span class="tag tag-known">Known</span></a>
 <a class="btn btn-secondary" href="/go/bulliant-slipper">BULLIANT slipper</a>
@@ -170,16 +172,13 @@ h2 { color:var(--slate-900); font-size:1.2rem; margin:0; }
 </div>
 </section>
 
-<div class="flag">
-<strong>Human review flag:</strong> Use-case → product mapping is editorial judgment (~70–80% confidence on which SKU “wins” each job). Treat picks as starting points; verify fit, toe box, and sole on the Amazon page for your size.
-</div>
 
 <div class="btn-row" style="margin-top:1.5rem">
 <a class="btn" href="/minimalist-shoes/compare/">Compare by price</a>
 <a class="btn btn-secondary" href="/minimalist-shoes/">All shoe links</a>
 <a class="btn btn-secondary" href="/bunions/">Bunion guide</a>
 </div>
-<p class="muted" style="margin-top:1rem">Affiliate links. You pay the same retail price; we may get a commission.</p>
+<p class="muted" style="margin-top:1rem">Affiliate links. You pay the same retail price; StackSpan may earn a commission.</p>
 </div></main>
 <footer class="site-footer"><div class="wrap footer-inner">
 <p class="name">StackSpan</p>

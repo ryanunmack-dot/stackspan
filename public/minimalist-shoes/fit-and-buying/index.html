@@ -11,7 +11,7 @@
 @theme { --color-brand: #ea580c; }
 </style>
 <style>
-:root { --brand:#ea580c; --brand-dark:#c2410c; --slate-50:#f8fafc; --slate-200:#e2e8f0; --slate-500:#64748b; --slate-600:#475569; --slate-800:#1e293b; --slate-900:#0f172a; }
+:root { --brand:#ea580c; --brand-dark:#c2410c; --slate-50:#f8fafc; --slate-200:#e2e8f0; --slate-500:#64748b; --slate-600:#475569; --slate-800:#1e293b; --slate-900:#0f172a; --radius:0.75rem; --brand-soft:#fff7ed; --line:#e2e8f0; }
 * { box-sizing: border-box; }
 body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background:var(--slate-50); color:var(--slate-800); line-height:1.55; min-height:100vh; display:flex; flex-direction:column; }
 a { color:var(--brand); text-decoration:none; }
@@ -23,7 +23,7 @@ a:hover { text-decoration:underline; }
 .header-inner { display:flex; align-items:center; justify-content:space-between; gap:1rem; padding:1rem 0; }
 .logo { font-weight:700; font-size:1.125rem; color:var(--slate-900); text-decoration:none; }
 .logo span { color:var(--brand); }
-.nav { display:flex; gap:1rem; font-size:0.875rem; font-weight:500; }
+.nav { display:flex; flex-wrap:wrap; gap:0.75rem 1rem; font-size:0.875rem; font-weight:500; }
 .nav a { color:var(--slate-600); text-decoration:none; }
 .nav a:hover { color:var(--brand); }
 main { flex:1; padding:2.5rem 0; }
@@ -64,6 +64,34 @@ h2 { color:var(--slate-900); font-size:1.25rem; margin:2rem 0 0.75rem; }
 .next-cards a:hover { border-color:var(--brand); text-decoration:none; }
 .next-cards strong { display:block; color:var(--slate-900); font-size:0.95rem; }
 .next-cards span { display:block; margin-top:0.35rem; color:var(--slate-600); font-size:0.88rem; }
+.card-media {
+  aspect-ratio: 16 / 10;
+  border-radius: calc(var(--radius) - 4px);
+  background: var(--brand-soft);
+  margin: -0.15rem -0.15rem 0.75rem;
+  overflow: hidden;
+}
+.card-media img { width:100%; height:100%; object-fit:cover; display:block; }
+.card-media[data-slot^="diagram-"],
+.card-media.diagram {
+  margin-left: 0;
+  margin-right: 0;
+  background: #fff;
+  border: 1px solid var(--line, #e2e8f0);
+}
+.card-media[data-slot="diagram-sit-stand-walk"] { aspect-ratio: 3 / 1; max-width: 720px; }
+.card-media[data-slot="diagram-gel-vs-stretcher"] { aspect-ratio: 2 / 1; max-width: 640px; }
+.card-media[data-slot="diagram-warmup-cues"] { aspect-ratio: 4 / 1; max-width: 640px; }
+.card-media[data-slot="diagram-fit-check"] { aspect-ratio: 2 / 1; max-width: 560px; }
+.card-media[data-slot^="diagram-"] img,
+.card-media.diagram img { object-fit: contain; }
+.diagram-caption { margin: 0.35rem 0 1rem; font-size: 0.88rem; color: var(--body, #475569); max-width: 40rem; }
+.card-media.diagram picture{display:contents}
+.card-media[data-slot="diagram-toe-box-shape"],.card-media[data-slot="diagram-foot-trace"]{aspect-ratio:2/1;max-width:640px}
+.card-media[data-slot="diagram-foot-shapes"],.card-media[data-slot="diagram-transition-ramp"]{aspect-ratio:3/1;max-width:720px}
+.card-media[data-slot="diagram-sandbag-moves"]{aspect-ratio:4/1;max-width:720px}
+@media (max-width:480px){.card-media[data-slot="diagram-sandbag-moves"]{aspect-ratio:1/1;max-width:360px}}
+.card-media.diagram img{max-width:720px;width:100%;height:auto;margin-inline:auto;display:block}
 </style>
 </head>
 <body>
@@ -84,7 +112,7 @@ h2 { color:var(--slate-900); font-size:1.25rem; margin:2rem 0 0.75rem; }
 <h1>Fit and buying barefoot / minimalist shoes</h1>
 <p class="lede">Geometry first — roomy toe box, drop, sole flex — then decide if you want a cheap try-on or a known brand. Shopping talk only. Not medical advice.</p>
 <div class="start">
-<strong>Start here:</strong> Width, drop, and how easily the sole bends beat the logo. Try ASITVO or WHITIN cheap; step to Xero Prio when you want sizing and returns that feel less like a lottery. Amazon buttons use our /go links; brand-site links are plain (not affiliate).
+<strong>Start here:</strong> Width, drop, and how easily the sole bends beat the logo. Try ASITVO or WHITIN cheap; step to Xero Prio when you want sizing and returns that feel less like a lottery. Amazon buttons use StackSpan /go links; brand-site links are plain (not affiliate).
 </div>
 
 <div class="prose">
@@ -125,7 +153,7 @@ h2 { color:var(--slate-900); font-size:1.25rem; margin:2rem 0 0.75rem; }
 </div>
 
 <h2>Where to buy</h2>
-<p class="muted" style="margin:0.35rem 0 0">Primary = Amazon via our /go redirect. Secondary = plain brand site when useful.</p>
+<p class="muted" style="margin:0.35rem 0 0">Primary = Amazon via the /go redirect. Secondary = plain brand site when useful.</p>
 
 <div class="card">
 <h3>ASITVO — budget try-on</h3>
@@ -204,7 +232,7 @@ h2 { color:var(--slate-900); font-size:1.25rem; margin:2rem 0 0.75rem; }
 <a class="btn btn-secondary" href="/minimalist-shoes/starter-kit/">Starter kit</a>
 <a class="btn btn-secondary" href="/minimalist-shoes/barefoot-vs-traditional/">Barefoot vs traditional</a>
 </div>
-<p class="muted" style="margin-top:1rem">Last updated: September 2026 · Affiliate links. You pay the same retail price; we may get a commission.</p>
+<p class="muted" style="margin-top:1rem">Last updated: September 2026 · Affiliate links. You pay the same retail price; StackSpan may earn a commission.</p>
 </div></main>
 <footer class="site-footer"><div class="wrap footer-inner">
 <p class="name">StackSpan</p>

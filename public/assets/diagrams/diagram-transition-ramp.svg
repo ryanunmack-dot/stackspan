@@ -7,29 +7,29 @@
   .solid{fill:#0f172a}
   .muted{fill:#f8fafc;stroke:#0f172a;stroke-width:3;stroke-linejoin:round}
   .accent{fill:#ea580c;stroke:#ea580c;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
-  .label{font-family:Arial,Helvetica,sans-serif;font-size:24px;font-weight:600;letter-spacing:.02em;fill:#0f172a}
-  .small{font-family:Arial,Helvetica,sans-serif;font-size:20px;font-weight:600;letter-spacing:.01em;fill:#0f172a}
+  .label{font-family:Arial,Helvetica,sans-serif;font-size:38px;font-weight:600;letter-spacing:.02em;fill:#0f172a}
+  .small{font-family:Arial,Helvetica,sans-serif;font-size:32px;font-weight:600;letter-spacing:.01em;fill:#0f172a}
 </style>
 <rect class="bg" x="0" y="0" width="1080" height="360"/>
-<path d="M104 250V210H301V250" class="muted" style="fill:#f1f5f9"/>
-<text class="label" x="202" y="286" text-anchor="middle">week 1</text>
-<text class="small" x="202" y="318" text-anchor="middle">short indoor</text>
-<path d="M329 250V165H526V250" class="muted" style="fill:#f1f5f9"/>
-<text class="label" x="427" y="286" text-anchor="middle">week 2</text>
-<text class="small" x="427" y="318" text-anchor="middle">short walks</text>
-<path d="M554 250V115H751V250" class="muted" style="fill:#f1f5f9"/>
-<text class="label" x="652" y="286" text-anchor="middle">week 3</text>
-<text class="small" x="652" y="318" text-anchor="middle">longer walks</text>
-<path d="M779 250V65H976V250" class="muted" style="fill:#f1f5f9"/>
-<text class="label" x="877" y="286" text-anchor="middle">week 4+</text>
-<text class="small" x="877" y="318" text-anchor="middle">most of the day</text>
-<path d="M90 250V200H315V155H540V105H765V55H990" class="accent" style="fill:none;stroke-width:4"/>
-<path d="M76 250H1004" class="ink"/>
-<path d="M52 250V60M44 72L52 60L60 72" class="ink"/>
-<text class="small" transform="translate(38,155) rotate(-90)" text-anchor="middle">time in shoes</text>
-<g transform="translate(96,52)">
+<path d="M76 230V180H302V230" class="muted" style="fill:#f1f5f9"/>
+<text class="label" x="189" y="272" text-anchor="middle">week 1</text>
+<text class="small" x="189" y="314" text-anchor="middle">short indoor</text>
+<path d="M326 230V140H552V230" class="muted" style="fill:#f1f5f9"/>
+<text class="label" x="439" y="272" text-anchor="middle">week 2</text>
+<text class="small" x="439" y="314" text-anchor="middle">short walks</text>
+<path d="M576 230V100H802V230" class="muted" style="fill:#f1f5f9"/>
+<text class="label" x="689" y="272" text-anchor="middle">week 3</text>
+<text class="small" x="689" y="314" text-anchor="middle">longer walks</text>
+<path d="M826 230V60H1052V230" class="muted" style="fill:#f1f5f9"/>
+<text class="label" x="939" y="272" text-anchor="middle">week 4+</text>
+<text class="small" x="939" y="314" text-anchor="middle">most of the day</text>
+<path d="M64 230V170H314V130H564V90H814V50H1064" class="accent" style="fill:none;stroke-width:4"/>
+<path d="M50 230H1068" class="ink"/>
+<path d="M50 230V44M42 56L50 44L58 56" class="ink"/>
+<text class="small" transform="translate(34,137) rotate(-90)" text-anchor="middle">time in shoes</text>
+<g transform="translate(78,62)">
   <path d="M0 40V14C0 8 6 4 12 7L28 16C40 21 56 24 66 29C73 32 76 37 76 42H0Z" class="muted"/>
   <path d="M0 42H76" class="ink"/>
-  <text class="small" x="92" y="36">keep a backup pair</text>
+  <text class="small" x="90" y="38">keep a backup pair</text>
 </g>
 </svg>

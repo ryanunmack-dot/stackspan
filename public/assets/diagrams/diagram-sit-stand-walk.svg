@@ -7,12 +7,12 @@
   .solid{fill:#0f172a}
   .muted{fill:#f8fafc;stroke:#0f172a;stroke-width:3;stroke-linejoin:round}
   .accent{fill:#ea580c;stroke:#ea580c;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
-  .label{font-family:Arial,Helvetica,sans-serif;font-size:24px;font-weight:600;letter-spacing:.02em;fill:#0f172a}
-  .small{font-family:Arial,Helvetica,sans-serif;font-size:20px;font-weight:600;letter-spacing:.01em;fill:#0f172a}
+  .label{font-family:Arial,Helvetica,sans-serif;font-size:38px;font-weight:600;letter-spacing:.02em;fill:#0f172a}
+  .small{font-family:Arial,Helvetica,sans-serif;font-size:32px;font-weight:600;letter-spacing:.01em;fill:#0f172a}
 </style>
   
 <rect class="bg" x="0" y="0" width="1080" height="360"/>
-<path d="M360 34V326M720 34V326" class="ink" opacity=".32"/>
+<path d="M360 34V326M720 34V326" class="ink" opacity=".25"/>
 <!-- sit -->
 <g transform="translate(0,0)">
   <path d="M62 132H312M278 132V300M312 132V300" class="ink"/>
@@ -25,7 +25,7 @@
   <path d="M141 185L111 220L88 268L71 300L101 300" class="ink"/>
   <path d="M71 300L101 300" class="ink"/>
   <path d="M95 301C118 297 143 297 163 300" class="ink" opacity=".45"/>
-  <text class="label" x="174" y="335" text-anchor="middle">sit</text>
+  <text class="label" x="174" y="346" text-anchor="middle">sit</text>
 </g>
 <!-- stand -->
 <g transform="translate(360,0)">
@@ -36,7 +36,7 @@
   <path d="M113 300H83M190 300H219" class="ink"/>
   <path d="M146 136L196 157L225 132" class="ink"/>
   <path d="M146 136L111 160" class="ink"/>
-  <text class="label" x="180" y="335" text-anchor="middle">stand</text>
+  <text class="label" x="180" y="346" text-anchor="middle">stand</text>
 </g>
 <!-- walk -->
 <g transform="translate(720,0)">
@@ -47,8 +47,8 @@
   <path d="M155 142L111 178L81 221" class="ink"/>
   <path d="M172 139L212 171L249 186" class="ink"/>
   <path d="M296 226L312 226M107 296H78" class="ink"/>
-  <path d="M65 315H310" class="ink" opacity=".35"/>
-  <text class="label" x="180" y="335" text-anchor="middle">walk</text>
+  <path d="M65 306H310" class="ink" opacity=".35"/>
+  <text class="label" x="180" y="346" text-anchor="middle">walk</text>
 </g>
 
 </svg>
