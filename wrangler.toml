@@ -4,3 +4,4 @@ compatibility_date = "2026-09-06"
 # Static site for Workers (Cloudflare's current recommended path)
 [assets]
 directory = "./public"
+not_found_handling = "404-page"
